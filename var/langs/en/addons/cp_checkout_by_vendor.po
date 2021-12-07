@@ -1,0 +1,107 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::cp_checkout_by_vendor"
+msgid "Cart-Power: Checkout by vendor"
+msgstr "Cart-Power: Checkout by vendor"
+
+msgctxt "Addons::description::cp_checkout_by_vendor"
+msgid "Allow for user to checkout by each vendor. Developed by <a target=\"_blank\" href=\"https://cart-power.com/\">Cart-Power</a>"
+msgstr "Allow for user to checkout by each vendor. Developed by <a target=\"_blank\" href=\"https://cart-power.com/\">Cart-Power</a>"
+
+msgctxt "Languages::cp_checkout_this_vendor"
+msgid "Pay this vendor"
+msgstr "Pay this vendor"
+
+msgctxt "Languages::cp_allow_create_payment"
+msgid "Allow create payment"
+msgstr "Allow create payment"
+
+msgctxt "Languages::cp_should_checkout_by_vendor"
+msgid "Please, select vendor for checkout"
+msgstr "Please, select vendor for checkout"
+
+msgctxt "Languages::cp_payout_product"
+msgid "Payout product"
+msgstr "Payout product"
+
+msgctxt "Languages::cp_total_vendor_return"
+msgid "Vendors total amount due"
+msgstr "Vendors total amount due"
+
+msgctxt "Languages::cp_create_order"
+msgid "Create order"
+msgstr "Create order"
+
+msgctxt "Languages::cp_vendor_commission"
+msgid "Vendor commission"
+msgstr "Vendor commission"
+
+msgctxt "Languages::cp_paid"
+msgid "Paid"
+msgstr "Paid"
+
+msgctxt "Languages::products_in_session_warn"
+msgid "You have some products stored in session. Go to cart page to restore it"
+msgstr "You have some products stored in session. Go to cart page to restore it"
+
+msgctxt "Languages::products_from_all_vendors_back_in_cart"
+msgid "Products, stored in session restored in cart"
+msgstr "Products, stored in session restored in cart"
+
+msgctxt "SettingsOptions::cp_checkout_by_vendor::allow_all_vendor"
+msgid "Allow checkout with all vendors"
+msgstr "Allow checkout with all vendors"
+
+msgctxt "SettingsOptions::cp_checkout_by_vendor::hide_without_payment"
+msgid "Do not allow separate checkout if the vendor doesn't have their own payment method"
+msgstr "Do not allow separate checkout if the vendor doesn't have their own payment method"
+
+msgctxt "SettingsOptions::cp_checkout_by_vendor::show_cart_on_complete"
+msgid "Show the remaining items in the cart on the order completion page"
+msgstr "Show the remaining items in the cart on the order completion page"
+
+msgctxt "SettingsOptions::cp_checkout_by_vendor::add_standart_payment"
+msgid "Add administrator's payment"
+msgstr "Add administrator's payment"
+
+msgctxt "SettingsOptions::cp_checkout_by_vendor::complete_status"
+msgid "Order statuses"
+msgstr "Order statuses"
+
+msgctxt "SettingsOptions::cp_checkout_by_vendor::payout_status"
+msgid "Payout order status"
+msgstr "Payout order status"
+
+msgctxt "Languages::cp_complete_notification"
+msgid "You have pending products from the other vendors in your [cart]"
+msgstr "You have pending products from the other vendors in your [cart]"
+
+msgctxt "SettingsOptions::cp_checkout_by_vendor::licensekey"
+msgid "License Key"
+msgstr "License Key"
+
+msgctxt "SettingsTooltips::cp_checkout_by_vendor::licensekey"
+msgid "Find on the detailed page of your order"
+msgstr "Find on the detailed page of your order"
+
+msgctxt "Languages::cp_your_license_is_not_valid"
+msgid "You should enter valid License Key. Please, contact us (sales@cart-power.com), if you face any issues."
+msgstr "You should enter valid License Key. Please, contact us (sales@cart-power.com), if you face any issues."
+
+msgctxt "Languages::cp_not_paid"
+msgid "Not paid"
+msgstr "Not paid"
+
+msgctxt "Languages::cp_cbv_products_from"
+msgid "Products from"
+msgstr "Products from"
+
+msgctxt "Languages::cp_cbv_dont_go_to_cart"
+msgid "The checkout page was opened in several tabs (devices), please check the correctness of the data in the order before checkout."
+msgstr "The checkout page was opened in several tabs (devices), please check the correctness of the data in the order before checkout."
+
+

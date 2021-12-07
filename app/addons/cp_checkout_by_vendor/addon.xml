@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>cp_checkout_by_vendor</id>
+    <version>2.1</version>
+    <priority>100</priority>
+    <position>100</position>
+    <default_language>en</default_language>
+    <status>disabled</status>
+    <has_icon>Y</has_icon>
+    <authors>
+        <author>
+            <name>Cart-Power</name>
+            <email>sales@cart-power.com</email>
+            <url>https://cart-power.com</url>
+        </author>
+    </authors>
+    <supplier>Cart-Power</supplier>
+    <supplier_link>https://cart-power.com</supplier_link>
+    <compatibility>
+        <dependencies>cp_addons_manager</dependencies>
+    </compatibility>
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="licensekey">
+                        <type>input</type>
+                    </item>
+                    <item id="allow_all_vendor">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="hide_without_payment" parent_id="allow_all_vendor">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="show_cart_on_complete">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="add_standart_payment">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                   <item id="complete_status">
+                        <type>multiple checkboxes</type>
+                        <variants/>
+                        <default_value><![CDATA[#M#C=Y&P=Y]]></default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item for="install">ALTER TABLE ?:products ADD COLUMN vendor_product CHAR(1) NOT NULL DEFAULT 'N'</item>
+        <item for="uninstall">ALTER TABLE ?:products DROP COLUMN vendor_product </item>
+
+        <item for="install">ALTER TABLE ?:companies ADD COLUMN allow_create_payment CHAR(1) NOT NULL DEFAULT 'N'</item>
+        <item for="uninstall">ALTER TABLE ?:companies DROP COLUMN allow_create_payment </item>
+
+        <item for="install">ALTER TABLE ?:vendor_payouts ADD COLUMN vendor_payment CHAR(1) NOT NULL DEFAULT 'N'</item>
+        <item for="uninstall">ALTER TABLE ?:vendor_payouts DROP COLUMN vendor_payment </item>
+
+        <item for="install">ALTER TABLE ?:vendor_payouts ADD COLUMN paid CHAR(1) NOT NULL DEFAULT 'N'</item>
+        <item for="uninstall">ALTER TABLE ?:vendor_payouts DROP COLUMN paid </item>
+
+        <item for="install">ALTER TABLE ?:vendor_payouts ADD COLUMN exclude CHAR(1) NOT NULL DEFAULT 'N'</item>
+        <item for="uninstall">ALTER TABLE ?:vendor_payouts DROP COLUMN exclude </item>
+
+        <item for="install">ALTER TABLE ?:orders ADD COLUMN payout_id INT(11) NOT NULL DEFAULT 0</item>
+        <item for="uninstall">ALTER TABLE ?:orders DROP COLUMN payout_id </item>
+    </queries>
+</addon>

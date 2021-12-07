@@ -1,0 +1,101 @@
+msgid ""
+msgstr "Project-Id-Version: cs-cart-vendor_subdomain\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: webkul.com\n"
+"X-Crowdin-Project: cs-cart-vendor_subdomain\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /addons/wk_vendor_subdomain.po\n"
+"Last-Translator: webkul <support@webkul.com>\n"
+"PO-Revision-Date: 2018-01-30 03:41-0500\n"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "Russian Federation"
+
+msgctxt "Addons::name::wk_vendor_subdomain"
+msgid "Vendor Subdomain"
+msgstr "Поддомен поставщика"
+
+msgctxt "Addons::description::wk_vendor_subdomain"
+msgid "Allows the vendors to have their own subdomain"
+msgstr "Позволяет поставщикам иметь собственный субдомен"
+
+msgctxt "Languages::wk_vendor_subdomain"
+msgid "Vendor Subdomain"
+msgstr "Поддомен поставщика"
+
+msgctxt "Languages::wk_webkul_user_guide_content"
+msgid "Congratulation!! <b>\"[addon_name]\"</b> Add-on is succesfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+msgstr "Поздравление!! <b> \"[addon_name]\"</ b> Надстройка успешно установлена. <ul class = 'inline social-share'> <li> <a href='[support_link]' target='_blank' class='uibutton large confirm'> Ссылка на поддержку </a> </ li> <li> < a href = '[user_guide]' class = 'uibutton large confirm' target = '_ blank'> Руководство пользователя </a> </ li> </ ul>"
+
+msgctxt "SettingsOptions::wk_vendor_subdomain::subdomain_prefix"
+msgid "Subdomain Prefix"
+msgstr "Префикс субдомена"
+
+msgctxt "SettingsTooltips::wk_vendor_subdomain::subdomain_prefix"
+msgid "Prefix of subdomain entered by vendor"
+msgstr "Префикс субдомена, введенный поставщиком"
+
+msgctxt "SettingsOptions::wk_vendor_subdomain::default_subdomain"
+msgid "Default Subdomain"
+msgstr "Субдомен по умолчанию"
+
+msgctxt "SettingsTooltips::wk_vendor_subdomain::default_subdomain"
+msgid "Subdomain which will be shown in case of no subdomain entered by vendor/admin"
+msgstr "Субдомен, который будет отображаться в случае отсутствия субдомена, введенного поставщиком / администратором"
+
+msgctxt "SettingsVariants::wk_vendor_subdomain::default_subdomain::store_domain"
+msgid "No Subdomain"
+msgstr "Нет субдомена"
+
+msgctxt "SettingsVariants::wk_vendor_subdomain::default_subdomain::vendor_company_name"
+msgid "Vendor Company Name"
+msgstr "Название компании-поставщика"
+
+msgctxt "Languages::wk_vendor_subdomain_menu_description"
+msgid "Create and update vendor subdomain for storefront"
+msgstr "Создание и обновление субдомена поставщика для витрины"
+
+msgctxt "Languages::privileges.manage_wk_vendor_subdomain"
+msgid "Manage Vendor Subdomain"
+msgstr "Управление субдоменом поставщика"
+
+msgctxt "Languages::privileges.view_wk_vendor_subdomain"
+msgid "View Vendor Subdomain"
+msgstr "Просмотр субдомена поставщика"
+
+msgctxt "Languages::subdomain"
+msgid "Subdomain"
+msgstr "Subdomain"
+
+msgctxt "Languages::vendor_subdomain"
+msgid "Vendor Subdomain"
+msgstr "Поддомен поставщика"
+
+msgctxt "Languages::manage_vendor_subdomain"
+msgid "Manage Vendor Subdomain"
+msgstr "Управление субдоменом поставщика"
+
+msgctxt "Languages::update_subdomain"
+msgid "Update Subdomain"
+msgstr "Обновить субдомен"
+
+msgctxt "Languages::add_subdomain"
+msgid "Add Subdomain"
+msgstr "Добавить субдомен"
+
+msgctxt "Languages::add_subdomain_title"
+msgid "Add New Subdomain"
+msgstr "Добавить новый субдомен"
+
+msgctxt "Languages::subdomain_not_available_type_another_subdomain"
+msgid "Subdomain not available!! Have  been assigned to another vendor, Enter new subdomain"
+msgstr "Субдомен недоступен! Были назначены другому поставщику, введите новый поддомен"
+
+msgctxt "Languages::allowed_vendor_subdomain"
+msgid "Allow Vendor Subdomain"
+msgstr "Разрешить субдомен поставщика"
+

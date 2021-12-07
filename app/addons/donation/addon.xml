@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+	<id>donation</id>
+	<name>Donation Addons</name>
+	<description>This addon get donation details from ICH application.</description>
+	<version>1.0</version>
+	<priority>100500</priority>
+	<status>active</status>
+	<supplier>Source Che</supplier>
+    <supplier_link>https://www.chetu.com/</supplier_link>
+    
+    <authors>
+        <author>
+            <name>Source Che</name>
+            <url>https://www.chetu.com/</url>
+        </author>
+    </authors> 
+</addon>

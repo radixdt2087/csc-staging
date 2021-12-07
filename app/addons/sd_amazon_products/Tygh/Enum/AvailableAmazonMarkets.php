@@ -1,0 +1,2 @@
+<?php
+ namespace Tygh\Enum; class AvailableAmazonMarkets { const US = 'us'; const UK = 'uk'; const DE = 'de'; const JP = 'jp'; public static function getAll() { return array( self::US => self::US, self::UK => self::UK, self::DE => self::DE, self::JP => self::JP, ); } public static function getWithDescriptions($lang_code = CART_LANGUAGE) { static $markets; if (!$markets) { $markets = array(); foreach (self::getAll() as $market) { $markets[$market] = __('sd_amz_' . $market, array(), $lang_code); } } return $markets; } }

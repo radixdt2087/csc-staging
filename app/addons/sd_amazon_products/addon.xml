@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>sd_amazon_products</id>
+    <version>4.10.6</version>
+    <priority>10001</priority>
+    <position>1</position>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <supplier>Simtech Development</supplier>
+    <supplier_link>http://www.simtechdev.com</supplier_link>
+    <compatibility>
+        <core_version>
+            <min>4.5.0</min>
+        </core_version>
+        <core_edition>ULTIMATE,MULTIVENDOR</core_edition>
+    </compatibility>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general_section">
+                <items>
+                    <item id="notice">
+                        <type>info</type>
+                        <handler>fn_get_amazon_cron_notice</handler>
+                    </item>
+                    <item id="cron_key">
+                        <type>input</type>
+                        <default_value>my_key</default_value>
+                    </item>
+                     <item id="market_selectbox">
+                        <type>selectbox</type>
+                        <variants>
+                            <item id="us"/>
+                            <item id="uk"/>
+                            <item id="de"/>
+                            <item id="jp"/>
+                        </variants>
+                    </item>
+                    <item id="sync_period">
+                        <type>selectbox</type>
+                        <default_value>M</default_value>
+                        <variants>
+                            <item id="M"/>
+                            <item id="W"/>
+                            <item id="D"/>
+                        </variants>
+                    </item>
+                    <item id="sync_header">
+                        <type>header</type>
+                        <variants/>
+                    </item>
+                    <item id="sync_name">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <variants/>
+                    </item>
+                    <item id="sync_variations">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <variants/>
+                    </item>
+                    <item id="sync_quantity">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <variants/>
+                    </item>
+                    <item id="sync_price">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <variants/>
+                    </item>
+                    <item id="export_images_to_amazon">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <variants/>
+                    </item>
+                    <item id="sync_orders">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="default_shipping" parent_id="sync_orders">
+                        <type>selectbox</type>
+                        <variants/>
+                    </item>
+                    <item id="unshipped_status" parent_id="sync_orders">
+                        <type>selectbox</type>
+                        <variants/>
+                    </item>
+                    <item id="shipped_status" parent_id="sync_orders">
+                        <type>selectbox</type>
+                        <variants/>
+                    </item>
+                    <item id="canceled_status" parent_id="sync_orders">
+                        <type>selectbox</type>
+                        <variants/>
+                    </item>
+                    <item id="sync_users" parent_id="sync_orders">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="default_category" parent_id="sync_orders">
+                        <type>selectbox</type>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+            <section id="us_section">
+                <items>
+                    <item id="notice">
+                        <type>info</type>
+                        <handler>fn_get_amazon_registration_notice</handler>
+                    </item>
+                    <item id="is_active__us">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                        <variants/>
+                    </item>
+                    <item id="seller_id__us">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="marketplace_id__us">
+                        <type>input</type>
+                        <default_value>ATVPDKIKX0DER</default_value>
+                        <variants/>
+                    </item>
+                    <item id="aws_key_id__us">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="secret_key__us">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="template_us">
+                        <type>template</type>
+                        <default_value>buttons/us.tpl</default_value>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+            <section id="uk_section">
+                <items>
+                    <item id="notice__uk">
+                        <type>info</type>
+                        <handler>fn_get_amazon_registration_notice</handler>
+                    </item>
+                    <item id="is_active__uk">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                        <variants/>
+                    </item>
+                    <item id="seller_id__uk">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="marketplace_id__uk">
+                        <type>input</type>
+                        <default_value>A1F83G8C2ARO7P</default_value>
+                        <variants/>
+                    </item>
+                    <item id="aws_key_id__uk">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="secret_key__uk">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="template_uk">
+                        <type>template</type>
+                        <default_value>buttons/uk.tpl</default_value>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+            <section id="jp_section">
+                <items>
+                    <item id="notice__jp">
+                        <type>info</type>
+                        <handler>fn_get_amazon_registration_notice</handler>
+                    </item>
+                    <item id="is_active__jp">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                        <variants/>
+                    </item>
+                    <item id="seller_id__jp">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="marketplace_id__jp">
+                        <type>input</type>
+                        <default_value>A1VC38T7YXB528</default_value>
+                        <variants/>
+                    </item>
+                    <item id="aws_key_id__jp">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="secret_key__jp">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="template_jp">
+                        <type>template</type>
+                        <default_value>buttons/jp.tpl</default_value>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+            <section id="de_section">
+                <items>
+                    <item id="notice__de">
+                        <type>info</type>
+                        <handler>fn_get_amazon_registration_notice</handler>
+                    </item>
+                    <item id="is_active__de">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                        <variants/>
+                    </item>
+                    <item id="seller_id__de">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="marketplace_id__de">
+                        <type>input</type>
+                        <default_value>A1PA6795UKMFR9</default_value>
+                        <variants/>
+                    </item>
+                    <item id="aws_key_id__de">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="secret_key__de">
+                        <type>input</type>
+                        <default_value/>
+                        <variants/>
+                    </item>
+                    <item id="template_de">
+                        <type>template</type>
+                        <default_value>buttons/de.tpl</default_value>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item for="install">
+            ALTER TABLE ?:products
+                ADD amz_asin VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_sku VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_ean VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_upc VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_isbn VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_item_type VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_condition VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_condition_note VARCHAR(256) NOT NULL DEFAULT '',
+                ADD amz_browse_node VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_price DECIMAL(12,2),
+                ADD amz_item_is_marketplace char(1) NOT NULL DEFAULT 'N',
+                ADD amz_override_price char(1) NOT NULL DEFAULT 'N',
+                ADD amz_synchronization char(1) NOT NULL DEFAULT 'Y';
+        </item>
+        <item for="install">
+            ALTER TABLE `?:categories`
+                ADD amz_item_type VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_browse_node VARCHAR(96) NOT NULL DEFAULT '',
+                ADD amz_synchronization char(1) NOT NULL DEFAULT 'Y';
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS ?:amazon_reports (
+                report_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                company_id INT UNSIGNED NOT NULL DEFAULT 0,
+                feed_id VARCHAR(25) NOT NULL,
+                datetime INT(11) UNSIGNED NOT NULL DEFAULT 0,
+                quantity INT(11) UNSIGNED NOT NULL DEFAULT 0,
+                region VARCHAR(10) NOT NULL DEFAULT '',
+                sync_type INT UNSIGNED NOT NULL,
+                import_product_list TEXT NOT NULL DEFAULT '',
+                PRIMARY KEY (report_id)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            ALTER TABLE ?:payments ADD amz_payment VARCHAR(50) NOT NULL DEFAULT '';
+        </item>
+        <item for="install">
+            ALTER TABLE ?:orders ADD amz_order_id VARCHAR(50) NOT NULL DEFAULT '';
+        </item>
+        <item for="install">REPLACE INTO ?:privileges (privilege, is_default, section_id) VALUES ('manage_amazon_orders', 'Y', 'addons');</item>
+        <item for="uninstall">
+            ALTER TABLE ?:products
+                DROP amz_asin,
+                DROP amz_sku,
+                DROP amz_ean,
+                DROP amz_upc,
+                DROP amz_isbn,
+                DROP amz_price,
+                DROP amz_item_type,
+                DROP amz_browse_node,
+                DROP amz_condition,
+                DROP amz_condition_note,
+                DROP amz_override_price,
+                DROP amz_item_is_marketplace,
+                DROP amz_synchronization;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS `?:amazon_reports`
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:categories
+                DROP amz_item_type,
+                DROP amz_browse_node,
+                DROP amz_synchronization;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:payments DROP amz_payment;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:orders DROP amz_order_id;
+        </item>
+        <item for="uninstall">DELETE FROM ?:privileges WHERE privilege = 'manage_amazon_orders'</item>
+        <item for="install">ALTER TABLE ?:product_options ADD amazon_option VARCHAR(50) NOT NULL DEFAULT '';</item>
+        <item for="uninstall">ALTER TABLE ?:product_options DROP amazon_option;</item>
+        <item for="install">ALTER TABLE ?:product_option_variants ADD amazon_variant VARCHAR(50) NOT NULL DEFAULT '';</item>
+        <item for="uninstall">ALTER TABLE ?:product_option_variants DROP amazon_variant;</item>
+    </queries>
+<marketplace_product_id>1862</marketplace_product_id></addon>

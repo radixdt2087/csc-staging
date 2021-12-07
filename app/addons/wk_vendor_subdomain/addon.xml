@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<addon scheme='3.0'>
+    <id>wk_vendor_subdomain</id>
+    <version>1.1</version>
+    <priority>1075</priority>
+    <position>18464</position>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <compatibility>
+        <dependencies>vendor_plans,seo</dependencies>
+        <core_edition>
+            MULTIVENDOR
+        </core_edition>
+    </compatibility>
+    <auto_install>MULTIVENDOR</auto_install>
+    <supplier>Webkul Software Pvt Ltd</supplier>
+    <supplier_link>https://store.webkul.com/CS-Cart.html</supplier_link>
+    <authors>
+        <author>
+            <name>Webkul</name>
+            <email>support@webkul.com</email>
+            <url>https://webkul.com/</url>
+            <phone>India (+91)-9650486699 </phone>
+            <phone>USA (+1)-8667772047</phone>
+            <phone>UK (+44)-7937415639</phone>
+        </author>
+    </authors>
+    <settings edition_type="ROOT">
+        <sections>
+            <section id="general">
+                <items>
+                    <!--<item id="default_subdomain">
+                        <type>selectbox</type>
+                        <default_value></default_value>
+                         <variants>
+                            <item id="store_view"></item>
+                            <item id="profile_view"></item>
+                        </variants>
+                    </item>-->
+                    <item id="profile_page_seo">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+     <functions>
+        <item for="install">fn_wk_vendor_subdomain_install</item>
+    </functions>
+    <queries>    
+        <item for="install">
+         REPLACE INTO ?:privileges (privilege, is_default, section_id) VALUES ('manage_wk_vendor_subdomain', 'Y', 'addons');
+        </item>
+        <item for="install">
+            REPLACE INTO ?:privileges (privilege, is_default, section_id) VALUES ('view_wk_vendor_subdomain', 'Y', 'addons');
+        </item>
+        <!-- <item>ALTER TABLE ?:vendor_plans DROP COLUMN allowed_vendor_subdomain;</item>  -->
+        <item>DROP TABLE IF EXISTS ?:wk_vendor_subdomain</item>
+        <item>
+                 CREATE TABLE IF NOT EXISTS `?:wk_vendor_subdomain` (
+                `id` int(255) NOT NULL AUTO_INCREMENT,
+                `company_id` int(255) NOT NULL,
+                `subdomain` varchar(100) NOT NULL,
+                `status` char(1) NOT NULL DEFAULT 'D',
+                PRIMARY KEY (`id`),
+                UNIQUE KEY `company` (`company_id`)
+              ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+        </item>
+        <item>
+            ALTER TABLE ?:vendor_plans ADD COLUMN allowed_vendor_subdomain int(1) NOT NULL;
+        </item>
+
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_vendor_subdomain</item>
+        <item for="uninstall">
+            DELETE FROM ?:privileges WHERE privilege IN ('manage_wk_vendor_subdomain', 'view_wk_vendor_subdomain');
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:vendor_plans DROP COLUMN allowed_vendor_subdomain;
+        </item>
+    </queries>
+</addon>
+    

@@ -1,0 +1,116 @@
+// variables
+@circle-radius: 80px;
+@bar-height:6px;
+// //////////
+
+.otp-t4-main-box{
+    text-align: center;
+    width: 100%;
+}
+
+.otp-t4-section{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+.otp-t4-circle{
+    border: 5px solid #D1D1D1;
+    border-radius: 40px;
+    position: relative;
+    display: table;
+    height: @circle-radius;
+    float: left;
+    width: @circle-radius;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.otp-t4-bar{
+    display: inline-block;
+    width: @circle-radius;
+    height: @bar-height;
+    position: relative;
+    top: @circle-radius/2;
+    float: left;
+    background-color: #D1D1D1;
+}
+
+.otp-t4-label{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.otp-t4-text{
+    position: absolute;
+    top: 80px;
+    left: -15px;
+    text-align: center;
+    min-width: 105px;
+    word-break: break-word;
+    font-weight: 600;
+}
+
+.otp-t4-circle_done{
+    border-color: #3DB25E;
+}
+
+.otp-t4-bar-done{
+    background-color: #3DB25E;
+}
+
+.otp-t4-img{
+    width: @circle-radius - 30;
+}
+.otp-t4-bar-activ{
+    -webkit-animation-name: otp-t4-bar-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: otp-t4-bar-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes otp-t4-bar-animation {
+    100% {background:linear-gradient(to right, #3DB25E 40%, #3DB25E 60%);}
+}
+
+/* Standard syntax */
+@keyframes otp-t4-bar-animation {
+    100% {background:linear-gradient(to right, #3DB25E 40%, #3DB25E 60%);}
+}
+
+@media (max-width: 500px) {
+    .otp-t4-circle{
+        float:none;
+        width: @circle-radius/2 + 10;
+        height: @circle-radius/2 + 10;
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .otp-t4-bar{
+        display: block;
+        float: none;
+        width: @bar-height;
+        height: @circle-radius/2;
+        margin-left: unset;
+        margin-right: unset;
+        margin-left: 22px;
+        position: unset;
+    }
+    .otp-t4-text{
+        top: 10px;
+        left: 60px;
+        text-align: left;
+    }
+    .otp-t4-img{
+        width: @circle-radius/2  - 15;
+    }
+    .otp-t4-section{
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
+

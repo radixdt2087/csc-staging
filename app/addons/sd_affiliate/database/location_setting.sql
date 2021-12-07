@@ -1,0 +1,1 @@
+ALTER TABLE `cscart_bm_layouts` ADD `show_to_affiliate` CHAR(1) NOT NULL DEFAULT 'N';

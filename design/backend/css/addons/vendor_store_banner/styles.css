@@ -1,0 +1,10 @@
+#addon_vendor_store_bannerinstalled .bg-icon,
+#addon_vendor_store_banner .bg-icon {
+    background-image: url('../../../media/images/addons/vendor_store_banner/images/addon_icon.png');
+    background-size: contain;
+    border: 0px;
+}
+#addon_vendor_store_bannerinstalled .bg-icon i,
+#addon_vendor_store_banner .bg-icon i {
+    display: none;
+}

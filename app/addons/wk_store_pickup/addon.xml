@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<addon scheme="3.0">
+<id>wk_store_pickup</id>
+<version>1.0</version>
+<priority>100000</priority>
+<position>100</position>
+<status>active</status>
+<default_language>en</default_language>
+<auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+<supplier>Webkul Software Pvt. Ltd.</supplier>
+<supplier_link>https://store.webkul.com/CS-Cart.html</supplier_link>
+<has_icon>Y</has_icon>
+<functions>
+    <item for="install">fn_wk_store_pickup_install</item>
+    <item for="uninstall">fn_wk_store_pickup_uninstall</item>
+</functions>
+<settings edition_type="ROOT,ULT:VENDOR">
+    <sections >
+        <section id="general">
+            <items>
+                <item id="show_store_inventory">
+                    <type>checkbox</type>
+                    <default_value>N</default_value>
+                </item>
+                <item id="google_api_key">
+                    <type>input</type>
+                </item>
+                <item id="wk_search_range">
+                    <type>input</type>
+                    <default_value>5</default_value>                    
+                </item>
+                <item id="wk_search_range_max">
+                    <type>input</type>
+                    <default_value>100</default_value>                    
+                </item>
+                <item id="wk_search_range_unit">
+                    <type>selectbox</type>
+                    <default_value>km</default_value>
+                    <variants>
+                        <item id="km"></item>
+                        <item id="miles"></item>
+                    </variants>
+                </item>
+            </items>
+        </section>
+    </sections>
+</settings>
+<queries>
+    <item>DROP TABLE IF EXISTS ?:wk_store_pickup_points;</item>
+    <item>DROP TABLE IF EXISTS ?:wk_store_pickup_orders;</item>
+    <item>DROP TABLE IF EXISTS ?:wk_store_pickup_products;</item>
+    <item>DROP TABLE IF EXISTS ?:wk_store_pickup_point_descriptions;</item>
+    
+    <!-- <item>ALTER TABLE ?:products DROP COLUMN `enable_store_pickup`;</item>
+    <item>ALTER TABLE ?:products DROP COLUMN `store_pickup_only`;</item> -->
+    
+    <item for="install">CREATE TABLE IF NOT EXISTS `?:wk_store_pickup_points` (
+        `store_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+        `company_id` int(11) unsigned NOT NULL,
+        `pincode` varchar(250) NOT NULL,
+        `phone` varchar(50) NOT NULL,
+        `position` smallint(5) NOT NULL default '0',
+        `country` char(2) NOT NULL default '',
+        `latitude` double NOT NULL default '0',
+        `longitude` double NOT NULL default '0',
+        `place_id` varchar(255) default '',
+        `status` char(1) default 'A',
+        PRIMARY KEY (`store_id`) 
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+    </item>
+    <item>
+        CREATE TABLE `?:wk_store_pickup_point_descriptions` (
+            `store_id` mediumint(8) unsigned NOT NULL default '0',
+            `lang_code` char(2) NOT NULL default '',
+            `title` varchar(80) NOT NULL default '',
+            `description` text NOT NULL default '',
+            `address` mediumtext,
+            `state` varchar(50) default '',
+            `city` varchar(60) NOT NULL default '',
+            PRIMARY KEY  (`store_id`,`lang_code`)
+        ) ENGINE=MyISAM DEFAULT CHARSET UTF8;
+    </item>
+
+    <item for="install">CREATE TABLE IF NOT EXISTS `?:wk_store_pickup_products` (
+        `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+        `store_id` int(11) unsigned NOT NULL,
+        `product_id` int(11) NOT NULL,
+        `combination_hash` varchar(255) NOT NULL,
+        `status` char(1) DEFAULT 'A',
+        `stock` int(5) DEFAULT 0,
+        `variation_id` int(11) NOT NULL default '0',
+        PRIMARY KEY (`id`),
+        UNIQUE KEY (`store_id`,`product_id`,`variation_id`,`combination_hash`) 
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;</item>
+
+    <item for="install">CREATE TABLE IF NOT EXISTS `?:wk_store_pickup_orders` (
+        `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+        `store_id` int(11) unsigned NOT NULL,
+        `product_id` int(11) NOT NULL,
+        `order_id` int(11) NOT NULL,
+        `item_id` int(11) NOT NULL,
+        `amount` int(5) DEFAULT 1,
+        `update_timestamp` int(11) unsigned NOT NULL,
+        `timestamp` int(11) unsigned NOT NULL,
+        `inventory_updated` smallint(1) DEFAULT 0,
+        `product_options` text NOT NULL, 
+        `status` char(1) DEFAULT 'H',
+        UNIQUE KEY (`order_id`, `store_id` , `product_id`, `item_id`),
+        PRIMARY KEY (`id`) 
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;</item>
+
+    <item for="install">ALTER TABLE ?:products ADD `enable_store_pickup` char(1) DEFAULT 'N';</item>
+    <item for="install">ALTER TABLE ?:products ADD `store_pickup_only` char(1) DEFAULT 'N';</item>
+
+    <item for="uninstall">DROP TABLE IF EXISTS ?:wk_store_pickup_points;</item>
+    <item for="uninstall">DROP TABLE IF EXISTS ?:wk_store_pickup_point_descriptions;</item>
+    
+    <item for="uninstall">DROP TABLE IF EXISTS ?:wk_store_pickup_orders;</item>
+    <item for="uninstall">DROP TABLE IF EXISTS ?:wk_store_pickup_products;</item>
+    <item for="uninstall">ALTER TABLE ?:products DROP COLUMN `enable_store_pickup`;</item>
+    <item for="uninstall">ALTER TABLE ?:products DROP COLUMN `store_pickup_only`;</item>
+    <item for="install" editions="MULTIVENDOR,ULTIMATE">REPLACE INTO  ?:privileges (privilege, is_default, section_id) VALUES ('manage_store_pickup', 'Y', 'addons');</item>
+    <item for="install" editions="MULTIVENDOR,ULTIMATE">REPLACE INTO  ?:privileges (privilege, is_default, section_id) VALUES ('view_store_pickup', 'Y', 'addons');</item>
+    <item for="uninstall" editions="MULTIVENDOR,ULTIMATE">DELETE FROM ?:privileges WHERE privilege IN ('manage_store_pickup', 'view_store_pickup');</item>
+</queries>
+</addon>

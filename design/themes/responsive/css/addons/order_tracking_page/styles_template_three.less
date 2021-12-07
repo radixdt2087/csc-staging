@@ -1,0 +1,124 @@
+// variables
+@circle-t3-radius: 40px;
+@bar-t3-height:4px;
+// //////////
+
+.otp-t3-main-box{
+    text-align: center;
+    width: 100%;
+}
+
+.otp-t3-section{
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
+}
+
+.otp-t3-circle{
+    border: 4px solid #D1D1D1;
+    border-radius: 40px;
+    position: relative;
+    display: table;
+    height: @circle-t3-radius;
+    float: left;
+    width: @circle-t3-radius;
+    text-align: center;
+    box-sizing: border-box;
+}
+.otp-t3-text{
+    font-weight: 600;
+}
+.otp-t3-circle_done{
+    border-color: #3DB25E;
+    background-color: #3DB25E;
+}
+.otp-t3-bar{
+    display: inline-block;
+    width: @circle-t3-radius*3;
+    height: @bar-t3-height;
+    position: relative;
+    top: @circle-t3-radius/2;
+    float: left;
+    background-color: #D1D1D1;
+}
+
+.otp-t3-label{
+    position: absolute;
+    top: 50px;
+    left: -35px;
+    width: 105px;
+}
+
+.otp-t3-icon{
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.otp-t3-image{
+    font-size: 15px;
+}
+.otp-t3-img{
+    vertical-align: super;
+    width: 50px;
+}
+
+.otp-t3-bar-activ{
+    -webkit-animation-name: otp-t3-bar-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: otp-t3-bar-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes otp-t3-bar-animation {
+    100% {background:linear-gradient(to right, #258a41 40%, #258a41 60%);}
+}
+
+/* Standard syntax */
+@keyframes otp-t3-bar-animation {
+    100% {background:linear-gradient(to right, #258a41 40%, #258a41 60%);}
+}
+.otp-t3-bar-done{
+    background-color: #258a41;
+}
+@media screen and (max-width: 500px) {
+    .otp-t3-circle{
+        float:none;
+        margin-left: unset;
+        margin-right: unset;
+        width: @circle-t3-radius - 10;
+        height: @circle-t3-radius - 10;
+    }
+    .otp-t3-label{
+        top: -10px;
+        left: 20px;
+    }
+    .otp-t3-bar{
+        display: block;
+        float: none;
+        width: @bar-t3-height;
+        height: @circle-t3-radius*2 - 25;
+        margin-right: unset;
+        margin-left: 13px;
+        position: unset;
+    }
+    .otp-t3-text{
+        font-size: 12px;
+    }
+    .otp-t3-section{
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .otp-t3-icon{
+        top: 3px;
+        font-size: 15px;
+    }
+    .otp-t3-img{
+        width: 40px;
+    }
+}

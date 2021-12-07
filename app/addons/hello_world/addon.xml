@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<addon scheme='2.0'>
+    <id>hello_world</id>
+    <version>1.0</version>
+    <name>Hello World</name>
+    <description>Say hello to the world</description>
+    <priority>100500</priority>
+    <settings>
+    <sections>
+        <section id="general">
+            <items>
+                <item id="some_prop">
+                    <name>Enter any text</name>
+                    <type>input</type>
+                    <default_value>Hello World!</default_value>
+                </item>
+                <item id="some_dropdown">
+                    <name>Pick a value from the list</name>
+                    <type>selectbox</type>
+                    <default_value>blue</default_value>
+                        <variants>
+                            <item id="red">
+                                <name>Red</name>
+                            </item>
+                            <item id="green">
+                                <name>Green</name>
+                            </item>
+                            <item id="blue">
+                                <name>Blue</name>
+                            </item>
+                        </variants>
+                </item>
+            </items>
+        </section>
+    </sections>
+</settings>
+</addon>

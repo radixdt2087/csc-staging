@@ -1,0 +1,626 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgctxt "Addons::name::sd_amazon_products"
+msgid "Simtech Development: Amazon Synchronization"
+msgstr "Simtech Development: Amazon Синхронизация"
+
+msgctxt "Addons::description::sd_amazon_products"
+msgid "Allows to synchronize products and categories between Amazon and CS-Cart. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Support</a>"
+msgstr "Позволяет синхронизировать товары и категории между Amazon и CS-Cart. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Поддержка</a>"
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_header"
+msgid "Attributes for synchronization"
+msgstr "Атрибуты для синхронизации"
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_name"
+msgid "Product name"
+msgstr "Наименование товара"
+
+msgctxt "SettingsTooltips::sd_amazon_products::sync_name"
+msgid "The product name will be taken from Amazon and synchronized with CS-Cart"
+msgstr "Наименование товара будет передаваться из Amazon в CS-Cart"
+
+msgctxt "Languages::amazon_cron_notice"
+msgid "<p>Use the following line to run the script according to schedule <br> For import <code>[import_product_cron]</code> <br> For export <code>[export_product_cron]</code> <br> For import orders <code>[import_orders_cron]</code></p>"
+msgstr "<p>Используйте следующую команду для запуска скрипта по расписанию <br> Для импорта <code>[import_product_cron]</code> <br> Для экспорта <code>[export_product_cron]</code> <br> Для импорта заказов <code>[import_orders_cron]</code></p>"
+
+msgctxt "SettingsVariants::sd_amazon_products::market_selectbox::us"
+msgid "United States"
+msgstr "США"
+
+msgctxt "SettingsVariants::sd_amazon_products::market_selectbox::uk"
+msgid "United Kingdom"
+msgstr "Великобритания"
+
+msgctxt "SettingsVariants::sd_amazon_products::market_selectbox::jp"
+msgid "Japan"
+msgstr "Япония"
+
+msgctxt "SettingsVariants::sd_amazon_products::market_selectbox::de"
+msgid "Germany"
+msgstr "Германия"
+
+msgctxt "SettingsOptions::sd_amazon_products::market_selectbox"
+msgid "Your marketplace"
+msgstr "Ваша основаная площадка"
+
+msgctxt "SettingsOptions::sd_amazon_products::number_of_items_to_sync"
+msgid "Number of items to sync"
+msgstr "Количество товаров для синхронизации"
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_quantity"
+msgid "Product quantity"
+msgstr "Количество товара"
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_price"
+msgid "Цена товара"
+msgstr "Цена товара"
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_orders"
+msgid "Import orders"
+msgstr "Импорт заказов"
+
+msgctxt "SettingsTooltips::sd_amazon_products::sync_orders"
+msgid "Enable import orders from Amazon."
+msgstr "Включить импорт заказов из Amazon."
+
+msgctxt "SettingsOptions::sd_amazon_products::default_shipping"
+msgid "Default shipping"
+msgstr "Метод доставки по умолчанию"
+
+msgctxt "SettingsTooltips::sd_amazon_products::default_shipping"
+msgid "The shipping method is used for orders imported from Amazon."
+msgstr "Метод доставки используется при формировании заказов импортированных из Amazon."
+
+msgctxt "SettingsOptions::sd_amazon_products::default_category"
+msgid "Default category"
+msgstr "Категория по умолчанию"
+
+msgctxt "SettingsTooltips::sd_amazon_products::default_category"
+msgid "Default category for Amazon products."
+msgstr "Категория по умолчанию для товаров из Amazon."
+
+msgctxt "SettingsOptions::sd_amazon_products::cron_key"
+msgid "Cron key"
+msgstr "Cron ключ"
+
+msgctxt "SettingsOptions::sd_amazon_products::unshipped_status"
+msgid "Unshipped status"
+msgstr "Статус Unshipped"
+
+msgctxt "SettingsTooltips::sd_amazon_products::unshipped_status"
+msgid "Select the order status for the Unshipped status."
+msgstr "Выберите статус заказа для Unshipped статуса."
+
+msgctxt "SettingsOptions::sd_amazon_products::shipped_status"
+msgid "Shipped status"
+msgstr "Статус Shipped"
+
+msgctxt "SettingsTooltips::sd_amazon_products::shipped_status"
+msgid "Select the order status for the Shipped status."
+msgstr "Выберите статус заказа для Shipped статуса."
+
+msgctxt "SettingsOptions::sd_amazon_products::canceled_status"
+msgid "Canceled status"
+msgstr "Статус Canceled"
+
+msgctxt "SettingsTooltips::sd_amazon_products::canceled_status"
+msgid "Select the order status for the Canceled status."
+msgstr "Выберите статус заказа для Canceled статуса."
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_users"
+msgid "Import users"
+msgstr "Импорт покупателей"
+
+msgctxt "SettingsOptions::sd_amazon_products::export_images_to_amazon"
+msgid "Export Images to Amazon"
+msgstr "Экспорт изображений в Amazon"
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_variations"
+msgid "Variations"
+msgstr "Вариации"
+
+msgctxt "SettingsTooltips::sd_amazon_products::sync_variations"
+msgid "Enable import/export product variations."
+msgstr "Включить импорт/экспорт вариаций товаров."
+
+msgctxt "SettingsTooltips::sd_amazon_products::sync_users"
+msgid "Enable import users from Amazon."
+msgstr "Включить импорт покупателей из Amazon."
+
+msgctxt "SettingsSections::sd_amazon_products::us_section"
+msgid "United States"
+msgstr "США"
+
+msgctxt "SettingsSections::sd_amazon_products::uk_section"
+msgid "United Kingdom"
+msgstr "Великобритания"
+
+msgctxt "SettingsSections::sd_amazon_products::jp_section"
+msgid "Japan"
+msgstr "Япония"
+
+msgctxt "SettingsSections::sd_amazon_products::de_section"
+msgid "Germany"
+msgstr "Германия"
+
+msgctxt "SettingsSections::sd_amazon_products::general_section"
+msgid "General"
+msgstr "Основные"
+
+msgctxt "Languages::amz_browse_node"
+msgid "Amazon browse node"
+msgstr "Amazon рекомендуемый узел"
+
+msgctxt "Languages::sd_amz_ean_desc"
+msgid "This type of bar code is specific to Europe and Japan, but is widely used internationally. It is a superset of the UPC code: all products marked with an EAN will be accepted in North America."
+msgstr "Этот тип штрих-кода характерен для Европы и Японии, но широко используется на международном уровне. Это надмножество кода UPC: все продукты, отмеченные EAN, будут приняты в Северной Америке."
+
+msgctxt "Languages::sd_amz_upc_desc"
+msgid "This type of bar code is widely used in the United States, the United Kingdom, Canada, Australia and in other countries."
+msgstr "Этот тип штрих-кода широко используется в Соединенных Штатах, Великобритании, Канаде, Австралии и других странах."
+
+msgctxt "Languages::amazon"
+msgid "Amazon"
+msgstr "Амазон"
+
+msgctxt "Languages::amazon_registration_notice"
+msgid "<p>Once you have signed up for Amazon Merchant Account, you need to associate your Amazon account with the add-on: </p><ul><li>For Europe based subjects, navigate to <a href=\"https://developer.amazonservices.co.uk\" target=\"_blank\">https://developer.amazonservices.co.uk</a> and log in using your <i>Amazon Merchant Account</i>.</li><li>US &amp; Canada based subjects navigate to <a href=\"https://developer.amazonservices.com\" target=\"_blank\">https://developer.amazonservices.com</a> and log in using your <i>Amazon Merchant Account</i>.</li><li>Tick <i>I want to access my own Amazon seller account with MWS</i></li></ul><p> Once you agree to the terms and conditions of the Amazon License Agreement, you’ll get your <b><i>Seller ID, </i><i>AWS Access Key ID, </i><i>Secret Key</i></b> which you need to enter in the add-on settings for your marketplace region.</p>"
+msgstr "<p>После создания учетной записи Amazon Merchant вам необходимо связать свою учетную запись Amazon с модулем: </p><ul><li>Для стран Европы перейдите по ссылке <a href=\"https://developer.amazonservices.co.uk\" target=\"_blank\">https://developer.amazonservices.co.uk</a> и авторизуйтесь, используя свою учетную запись <i>Amazon Merchant Account</i>.</li><li>Для США и Канады перейдите по ссылке: <a href=\"https://developer.amazonservices.com\" target=\"_blank\">https://developer.amazonservices.com</a> и авторизуйтесь, используя учетную запись <i>Amazon Merchant Account</i>.</li><li>Отметьте галочкой <i>I want to access my own Amazon seller account with MWS</i></li></ul><p> После принятия условий лицензионного соглашения Amazon, вы получите ваш <b><i>Seller ID, </i><i>AWS Access Key ID, </i><i>Secret Key</i></b> которые вам нужно указать в настройках модуля для вашего региона.</p>"
+
+msgctxt "Languages::api_check"
+msgid "API Check:"
+msgstr "Проверка данных:"
+
+msgctxt "Languages::api_check_connect"
+msgid "Check Connectivity"
+msgstr "Проверить"
+
+msgctxt "Languages::is_active"
+msgid "Active"
+msgstr "Вкл."
+
+msgctxt "Languages::seller_id"
+msgid "Seller ID (Merchant ID)"
+msgstr "ID продавца"
+
+msgctxt "Languages::marketplace_id"
+msgid "Marketplace ID"
+msgstr "ID маркета"
+
+msgctxt "Languages::usedlikenew"
+msgid "Used; Like New"
+msgstr "Used; Like New"
+
+msgctxt "Languages::usedverygood"
+msgid "Used; Very Good"
+msgstr "Used; Very Good"
+
+msgctxt "Languages::usedgood"
+msgid "Used; Good"
+msgstr "Used; Good"
+
+msgctxt "Languages::sd_amz_asin_desc"
+msgid "ASIN is optional"
+msgstr "ASIN опционален"
+
+msgctxt "Languages::usedacceptable"
+msgid "Used; Acceptable"
+msgstr "Used; Acceptable"
+
+msgctxt "Languages::collectiblelikenew"
+msgid "Collectible; Like New"
+msgstr "Collectible; Like New"
+
+msgctxt "Languages::sd_amz_isbn_desc"
+msgid "ISBN is a 13-digit number that uniquely identifies books and book-like products published internationally."
+msgstr "ISBN это 13-ти значный штрихкод который используется для обозначения книг, журналов, и прочей продукции во всем мире."
+
+msgctxt "Languages::collectibleverygood"
+msgid "Collectible; Very Good"
+msgstr "Collectible; Very Good"
+
+msgctxt "Languages::collectiblegood"
+msgid "Collectible; Good"
+msgstr "Collectible; Good"
+
+msgctxt "Languages::collectibleacceptable"
+msgid "Collectible; Acceptable"
+msgstr "Collectible; Acceptable"
+
+msgctxt "Languages::refurbished"
+msgid "Refurbished"
+msgstr "Refurbished"
+
+msgctxt "Languages::club"
+msgid "Club"
+msgstr "Club"
+
+msgctxt "Languages::aws_key_id"
+msgid "AWS Access Key ID"
+msgstr "AWS ID"
+
+msgctxt "Languages::secret_key"
+msgid "AWS Access Secret Key"
+msgstr "Ключ AWS"
+
+msgctxt "Languages::sd_amz_create_product_feed"
+msgid "Generating product feed for \"[product]\""
+msgstr "Создание XML сообщения для \"[product]\""
+
+msgctxt "Languages::sd_amz_check_product"
+msgid "Checking the relevance of the data for \"[product]\""
+msgstr "Проверка актуальности данных для \"[product]\""
+
+msgctxt "Languages::sd_amz_sending_feed"
+msgid "Sending generated feed to Amazon"
+msgstr "Отправка созданного сообщения на Amazon"
+
+msgctxt "SettingsTooltips::sd_amazon_products::cron_key"
+msgid "To set up the cron script and enable synchronization with Amazon use the URL above"
+msgstr "Чтобы настроить cron скрипт и включить синхронизацию с Amazon, используйте приведенную выше команду"
+
+msgctxt "Languages::sd_amz_export_failed_msg"
+msgid "An error has occured. Some of the products have not been exported to Amazon."
+msgstr "Произошла ошибка. Некоторые товары не были экспортированы на Amazon."
+
+msgctxt "Languages::sd_amz_export_product_on"
+msgid "Export to Amazon"
+msgstr "Экспорт на Amazon"
+
+msgctxt "Languages::sd_amz_import_product_from"
+msgid "Import from Amazon"
+msgstr "Импорт из Amazon"
+
+msgctxt "Languages::sd_amz_export_info_msg"
+msgid "For more information, please refer to the <a class=\"pseudo-a\" href=\"[url]\" target=\"_blank\">report</a> with ID <strong style=\"padding: 0;\">[id]</strong>. The report contains information about the exported products. Amazon may require 2-10 minutes to create a report. Please be patient."
+msgstr "Больше информации доступно в <a class=\"pseudo-a\" href=\"[url]\" target=\"_blank\">отчете</a> с идентификатором <strong style=\"padding: 0;\">[id]</strong>. В отчетах содержатся информационные сообщения, связанные с отправленными ранее товарами. Амазону может потребоваться от двух до десяти минут для создания отчета. Пожалуйста будьте терпеливы."
+
+msgctxt "Languages::sd_amz_import_info_msg"
+msgid "For more information, please refer to the <a class=\"pseudo-a\" href=\"[url]\" target=\"_blank\">report</a> with ID <strong style=\"padding: 0;\">[id]</strong>. The report contains information about the imported products."
+msgstr "Больше информации доступно в <a class=\"pseudo-a\" href=\"[url]\" target=\"_blank\">отчете</a> с идентификатором <strong style=\"padding: 0;\">[id]</strong>. В отчетах содержатся информационные сообщения, связанные с полученными ранее атрибутами."
+
+msgctxt "Languages::sd_amz_import_complete"
+msgid "Import completed"
+msgstr "Импорт завершен"
+
+msgctxt "Languages::sd_amz_imported"
+msgid "Imported fields"
+msgstr "Импортировано полей"
+
+msgctxt "Languages::sd_amz_no_products_for_sync"
+msgid "There are no such products in the Amazon listings for synchronization"
+msgstr "В листингах, предоставленных Амазоном, товаров для возможной синхронизации не обнаружено."
+
+msgctxt "Languages::sd_amz_export_success_msg"
+msgid "The products listed in the table below have been exported to Amazon."
+msgstr "Товары, указанные в следующей таблице были экспортированы на Амазон."
+
+msgctxt "Languages::sd_amz_import_success_msg"
+msgid "The product attributes specified in the table below have been imported from Amazon."
+msgstr "Атрибуты товаров, указанные в следующей таблице были импортированы из Амазона."
+
+msgctxt "Languages::sd_amz_count_product_successfully_exported"
+msgid "Products successfully exported:"
+msgstr "Успешно экспортировано:"
+
+msgctxt "Languages::sd_amz_export_failed_import_msg"
+msgid "Some of the attributes have not been imported. Check to make sure the value in the SKU field is correct for the following products (it should match the product SKU on Amazon)."
+msgstr "Некоторые из атрибутов не были импортированы. Проверьте корректность поля SKU у товаров (оно должно совпадать с вашим товаром на Амазоне) указанных в следующей таблице."
+
+msgctxt "Languages::sd_amz_export_failed_export_msg"
+msgid "Some of the products have not been exported to Amazon. Check to make sure the unique identifiers (ISBN, UPC, or EAN) of the following products are correct."
+msgstr "Некоторые товары не были экспортированы в Амазон. Проверьте корректность уникальных идентификаторов ваших товаров (ISBN, UPC, или EAN) указанных в следующей таблице."
+
+msgctxt "Languages::sd_amz_import_count_skip"
+msgid "Attributes skipped:"
+msgstr "Атрибутов пропущено:"
+
+msgctxt "Languages::sd_amz_import_count_fail"
+msgid "Attributes import failed:"
+msgstr "Неудачно импортировано атрибутов:"
+
+msgctxt "Languages::sd_amz_import_success"
+msgid "Product import successful"
+msgstr "Товар экспортирован"
+
+msgctxt "Languages::sd_amz_import_count_processed"
+msgid "Attributes successfully imported:"
+msgstr "Успешно импортировано атрибутов:"
+
+msgctxt "Languages::sd_amz_count_product_successfully_processed"
+msgid "Products processed:"
+msgstr "Обработано товаров:"
+
+msgctxt "Languages::sd_amz_count_product_fail_exported"
+msgid "Products export failed:"
+msgstr "Неудачно экспортировано:"
+
+msgctxt "Languages::sd_amz_count_product_fail_warning"
+msgid "Products export warning:"
+msgstr "Экспортировано с замечаниями:"
+
+msgctxt "Languages::sd_amz_count_product_skip"
+msgid "Products skipped:"
+msgstr "Пропущено товаров:"
+
+msgctxt "Languages::sd_amz_reports"
+msgid "Amazon reports"
+msgstr "Amazon отчеты"
+
+msgctxt "Languages::sd_amz_products_was_send"
+msgid "Products were successfully submitted to Amazon"
+msgstr "Товары были успешно отправлены на Amazon"
+
+msgctxt "Languages::sd_amz_products_export_info"
+msgid "Submission ID: <a href=\"[url]\" target=\"_blank\">[id]</a> <br />"
+msgstr "Submission ID: <a href=\"[url]\" target=\"_blank\">[id]</a> <br />"
+
+msgctxt "Languages::sd_amz_products_export_info_qty"
+msgid "[n] products has been sent"
+msgstr "[n] товар было отправлен|[n] товара было отправлено|[n] товаров было отправлено"
+
+msgctxt "Languages::sd_amz_export_complete"
+msgid "Export completed"
+msgstr "Экспорт завершен"
+
+msgctxt "Languages::sd_amz_set_keys"
+msgid "Amazon identifiers for product \"[product]\" cannot be empty"
+msgstr "Amazon идентификаторы для товара \"[product]\" не могут быть пустыми"
+
+msgctxt "Languages::sd_amz_report_is_not_avail"
+msgid "Feed Submission Result is not ready for Feed \"[feed]\""
+msgstr "Результат отправки фида не готов для \"[feed]\""
+
+msgctxt "Languages::sd_amz_submission_id"
+msgid "Submission ID"
+msgstr "ID запроса"
+
+msgctxt "Languages::sd_amz_region"
+msgid "Marketplace region"
+msgstr "Регион маркета"
+
+msgctxt "Languages::sd_amz_us"
+msgid "United States"
+msgstr "США"
+
+msgctxt "Languages::sd_amz_uk"
+msgid "United Kingdom"
+msgstr "Великобритания"
+
+msgctxt "Languages::sd_amz_jp"
+msgid "Japan"
+msgstr "Японский"
+
+msgctxt "Languages::sd_amz_de"
+msgid "Germany"
+msgstr "Немецкий"
+
+msgctxt "Languages::sd_amz_sku_desc"
+msgid "Each product must have a SKU, and each SKU must be unique"
+msgstr "Каждый товар должен иметь SKU, и каждый SKU должен быть уникальным"
+
+msgctxt "Languages::sd_amz_product_identifiers_desc"
+msgid "Your unique identifiers for the product, consisting of a type (ISBN, UPC, or EAN). If <label for=\"amz_sku\" style=\"display: inline-block;text-decoration: underline;\">SKU</label> is empty, the field <label for=\"elm_product_code\" style=\"display: inline-block;text-decoration: underline;\">CODE</label> is used instead."
+msgstr "Ваши уникальные идентификаторы товара (ISBN, UPC, или EAN). Если <label for=\"amz_sku\" style=\"display: inline-block;text-decoration: underline;\">SKU</label> не указано, значение будет взято из поля <label for=\"elm_product_code\" style=\"display: inline-block;text-decoration: underline;\">CODE</label>."
+
+msgctxt "Languages::amz_override_price"
+msgid "Redefine price on Amazon"
+msgstr "Переопределить цену на Amazon"
+
+msgctxt "Languages::amz_price"
+msgid "Amazon product price"
+msgstr "Цена на Amazon"
+
+msgctxt "Languages::amz_sku"
+msgid "SKU"
+msgstr "SKU"
+
+msgctxt "Languages::amz_asin"
+msgid "ASIN"
+msgstr "ASIN"
+
+msgctxt "Languages::amz_ean"
+msgid "EAN"
+msgstr "EAN"
+
+msgctxt "Languages::amz_upc"
+msgid "UPC"
+msgstr "UPC"
+
+msgctxt "Languages::amz_isbn"
+msgid "ISBN"
+msgstr "ISBN"
+
+msgctxt "Languages::sd_amz_submit_date"
+msgid "Submission date"
+msgstr "Дата запроса"
+
+msgctxt "Languages::amz_item_type"
+msgid "Amazon item type"
+msgstr "Тип товара на Amazon"
+
+msgctxt "Languages::item_type"
+msgid "Item type"
+msgstr "Тип товара"
+
+msgctxt "Languages::sd_amz_item_type_desc"
+msgid "Pre-defined value that specifies where the product should appear within the Amazon browse structure"
+msgstr "Значение, определяющее, где должен отображаться продукт в структуре Amazon категорий"
+
+msgctxt "Languages::sd_amz_override_price_desc"
+msgid "This value will override your shop price"
+msgstr "Это значение переопределит цену в вашем магазине"
+
+msgctxt "Languages::sd_amz_product_identifiers"
+msgid "Product identifiers"
+msgstr "Товарные идентификаторы"
+
+msgctxt "Languages::sd_amz_merch_missing"
+msgid "Merchant ID is missing!"
+msgstr "ID продавца пустое!"
+
+msgctxt "Languages::sd_amz_key_id_missing"
+msgid "AWS Access Key ID is missing!"
+msgstr "AWS Access Key ID пустое!"
+
+msgctxt "Languages::sd_amz_secret_missing"
+msgid "Secret Key is missing!"
+msgstr "Secret Key пустое!"
+
+msgctxt "Languages::sd_amz_activate_secton"
+msgid "Activate the marketplace!"
+msgstr "Активируйте маркет!"
+
+msgctxt "Languages::sd_amz_sending_feed_to_amazon"
+msgid "Sending feed to Amazon"
+msgstr "Отправка сообщения на Amazon"
+
+msgctxt "Languages::sd_amz_product_classifier"
+msgid "Product classifier"
+msgstr "Классификатор товара"
+
+msgctxt "Languages::sd_amz_product_condition"
+msgid "Product condition"
+msgstr "Условие товара"
+
+msgctxt "Languages::amz_condition_note"
+msgid "Condition note"
+msgstr "Заметка к условию"
+
+msgctxt "Languages::sd_amz_browse_node"
+msgid "Recommended browse node"
+msgstr "Рекомендуемый узел"
+
+msgctxt "Languages::sd_amz_no_match_sku_found"
+msgid "No match found. Please set the correct SKU for the product \"[product]\""
+msgstr "Совпадений не найдено. Установите корректный SKU для продукта \"[product]\""
+
+msgctxt "Languages::sd_amz_incorrect_csv_structure"
+msgid "Received CSV file has incorrect data formatting (incorrect entities in product name, etc.)"
+msgstr "Полученный файл CSV имеет неправильное форматирование данных (неправильные символы в названии продукта и т.д)"
+
+msgctxt "Languages::sd_amz_product_classifier_desc"
+msgid "<a href=\"https://sellercentral.amazon.com/listing/classify\" target=\"_blank\">Use the product classifier</a> to get <label for=\"amz_item_type\" style=\"display: inline-block;text-decoration: underline;\">Amazon item type</label> or <label for=\"amz_browse_node\" style=\"display: inline-block;text-decoration: underline;\">Recommended browse node</label>."
+msgstr "<a href=\"https://sellercentral.amazon.com/listing/classify\" target=\"_blank\">Используйте классификатор товара</a> чтобы получить <label for=\"amz_item_type\" style=\"display: inline-block;text-decoration: underline;\">тип товара</label> или <label for=\"amz_browse_node\" style=\"display: inline-block;text-decoration: underline;\">рекомендуемый узел</label>."
+
+msgctxt "Languages::sd_amz_browse_node_desc"
+msgid "Value used to classify an item. Mandatory for Canada, Europe, and Japan; not used in the US. Use a comma to separate nodes"
+msgstr "Значение используемое для классификации товара. Обязательное поле для Канады, Европы и Японии; не используется в США. Через запятую можно чередовать список узлов"
+
+msgctxt "Languages::sd_amz_price_desc"
+msgid "If the option is selected, all specified information overwrites existing price in your shop."
+msgstr "Если этот параметр выбран, вся указанная информация перезаписывает существующую цену в вашем магазине."
+
+msgctxt "Languages::sd_amz_synchronization"
+msgid "Synchronization with Amazon"
+msgstr "Синхронизация с Amazon"
+
+msgctxt "Languages::sd_amz_synchronization_desc_products"
+msgid "The checkbox is enabled for the products synchronized with Amazon"
+msgstr "Флаг активен для товаров, синхронизируемых с Amazon"
+
+msgctxt "Languages::sd_amz_synchronization_desc_categories"
+msgid "The checkbox is enabled for the categories synchronized with Amazon"
+msgstr "Флаг активен для категорий, синхронизируемых с Amazon"
+
+msgctxt "Languages::sd_amazon_products_empty"
+msgid "There are no products in a category."
+msgstr "В категории нет товаров."
+
+msgctxt "Languages::sd_amazon"
+msgid "Amazon"
+msgstr "Amazon"
+
+msgctxt "Languages::sd_amz_payment_method"
+msgid "Amazon payment method"
+msgstr "Метод оплаты в Amazon"
+
+msgctxt "Languages::sd_amz_order_list"
+msgid "Amazon Orders"
+msgstr "Заказы Amazon"
+
+msgctxt "Languages::amazon_orders"
+msgid "View Amazon orders"
+msgstr "Просмотр заказов из Amazon"
+
+msgctxt "Languages::sd_amz_amazon_order_id"
+msgid "Amazon Order Id"
+msgstr "Идентификатор заказа в Amazon"
+
+msgctxt "Languages::sd_amz_order_id"
+msgid "Order Id"
+msgstr "Идентификатор заказа"
+
+msgctxt "Languages::sd_amz_buyer_name"
+msgid "Buyer Name"
+msgstr "Имя покупателя"
+
+msgctxt "Languages::sd_amz_purchase_date"
+msgid "Purchase date"
+msgstr "Дата покупки"
+
+msgctxt "Languages::sd_amz_default_shipping_not_found"
+msgid "Default shipping on addon setting not found"
+msgstr "Метод доставки по умолчанию не был установлен"
+
+msgctxt "Languages::sd_amz_default_payment_not_found"
+msgid "The corresponding payment method has not been found"
+msgstr "Не найден соответствующий метод оплаты в магазине"
+
+msgctxt "Languages::sd_amz_no_products_in_variation"
+msgid "Failed to import variations for product [product_id]"
+msgstr "Не удалось импортировать варианты для продукта [product_id]"
+
+msgctxt "Languages::sd_amz_import_finished"
+msgid "Import has been completed<br>Orders: [count_orders]<br>Order statuses: [count_statuses]<br>"
+msgstr "Импорт завершен<br>Количество заказов: [count_orders]<br>Обновлено статусов: [count_statuses]<br>"
+
+msgctxt "Languages::privileges.manage_amazon_orders"
+msgid "Manage Amazon orders"
+msgstr "Управление заказами из Amazon"
+
+msgctxt "Languages::sd_amz_order"
+msgid "Amazon Order"
+msgstr "Заказ из Amazon"
+
+msgctxt "Languages::sd_amz_show_orders"
+msgid "Show only Amazon orders"
+msgstr "Показать только заказы из Amazon"
+
+msgctxt "Languages::sd_amz_import_orders"
+msgid "Import Amazon orders"
+msgstr "Импорт заказов из Amazon"
+
+msgctxt "Languages::addon.sd_amazon_products.amazon_option"
+msgid "Amazon option"
+msgstr "Amazon опция"
+
+msgctxt "Languages::addon.sd_amazon_products.amazon_variant"
+msgid "Amazon variant"
+msgstr "Amazon вариант"
+
+msgctxt "SettingsOptions::sd_amazon_products::lkey"
+msgid "License key"
+msgstr "Лицензионный ключ"
+
+msgctxt "SettingsOptions::sd_amazon_products::sync_period"
+msgid "Synchronization period"
+msgstr "Период синхронизации"
+
+msgctxt "SettingsVariants::sd_amazon_products::sync_period::M"
+msgid "Month"
+msgstr "Месяц"
+
+msgctxt "SettingsVariants::sd_amazon_products::sync_period::W"
+msgid "Week"
+msgstr "Неделя"
+
+msgctxt "SettingsVariants::sd_amazon_products::sync_period::D"
+msgid "Day"
+msgstr "День"

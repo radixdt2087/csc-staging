@@ -1,0 +1,1 @@
+ALTER TABLE `cscart_aff_partner_profiles` ADD `custom_aff_parameter` varchar(255) NOT NULL DEFAULT '';

@@ -1,0 +1,537 @@
+/*******************************************************************************************
+*   ___  _          ______                     _ _                _                        *
+*  / _ \| |         | ___ \                   | (_)              | |              © 2020   *
+* / /_\ | | _____  _| |_/ /_ __ __ _ _ __   __| |_ _ __   __ _   | |_ ___  __ _ _ __ ___   *
+* |  _  | |/ _ \ \/ / ___ \ '__/ _` | '_ \ / _` | | '_ \ / _` |  | __/ _ \/ _` | '_ ` _ \  *
+* | | | | |  __/>  <| |_/ / | | (_| | | | | (_| | | | | | (_| |  | ||  __/ (_| | | | | | | *
+* \_| |_/_|\___/_/\_\____/|_|  \__,_|_| |_|\__,_|_|_| |_|\__, |  \___\___|\__,_|_| |_| |_| *
+*                                                         __/ |                            *
+*                                                        |___/                             *
+* ---------------------------------------------------------------------------------------- *
+* This is commercial software, only users who have purchased a valid license and accept    *
+* to the terms of the License Agreement can install and use this program.                  *
+* ---------------------------------------------------------------------------------------- *
+* website: https://cs-cart.alexbranding.com                                                *
+*   email: info@alexbranding.com                                                           *
+*******************************************************************************************/
+
+html[dir="ltr"] .ab_vg-images-wrapper .owl-carousel .owl-wrapper {
+	display: flex !important;
+}
+
+i.ab__vg-icon-video {
+	color: @lighten-font;
+	font-size: 16px;
+    margin-right: 5px;
+}
+.ut2-mid-narrow i.ab__vg-icon-video {
+	font-size: 15px;
+}
+.ut2-min-narrow i.ab__vg-icon-video {
+	font-size: 14px;
+    margin-top: 1px;
+    margin-right: 4px;
+}
+.ty-template-small i.ab__vg-icon-video {
+    font-size: 15px;
+    margin-top: 1px;
+    margin-right: 3px;
+    float: left;
+}
+
+.ab__video_gallery-block {
+  margin: 0 -10px;
+  
+  @media (max-width: 768px) {
+	  margin: 0 -5px;
+  }
+}
+
+.ab__vg-videos {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    width: 100%;
+
+    .ab__vg-video {
+	    min-width: 200px;
+	    max-width: 354px;
+	    padding: 0 10px @pd;
+		
+	    &_thumb {
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    position: relative;
+		    overflow: hidden;
+		    background: black;
+			max-height: 240px;
+			
+			@media (min-width: 768px) and (max-width: 1024px) {
+				max-height: 180px;
+		    }
+		    @media (min-width: 461px) and (max-width: 600px) {
+				max-height: 160px;
+		    }
+		    @media (min-width: 361px) and (max-width: 460px) {
+				max-height: 120px;
+		    }
+		    
+		    img {
+		    	width: 100%;
+		    }
+		}
+
+	    &_title p {
+		    font-size: 14px;
+		    padding: 10px 0 0;
+		}
+		&_description p {
+		    color: @lighten-font;
+		    font-size: 12px;
+		}
+		
+		@media (max-width: 1366px) {
+			max-width: 33.3333%;
+	    }
+	    @media (max-width: 768px) {
+		    max-width: 50%;
+		    min-width: inherit;
+		    padding: 0 5px @pd;
+		    
+		    &_title {
+			    word-wrap: break-word;
+			    line-height: 1.2;
+			    min-height: 60px;
+				max-height: 60px;
+				
+				.ut2_line_clamp(3);
+				.hyphens(auto);
+				
+				strong {
+					font-weight: normal !important;
+				}
+		    }
+		    &_description {
+			    display: none;
+		    }
+	    }
+	    @media (max-width: 360px) {
+			max-width: 100%;
+			padding:  0 0 @pd;
+	    }
+    }
+}
+
+.ab__vg-image_gallery_video, .ab__vg-videos .ab__vg-video_thumb {
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url('/images/addons/ab__video_gallery/youtube_logo.png') no-repeat center;
+        background-size: 100%;
+        position: absolute;
+        z-index: 2;
+        
+		.opacity(90);
+		.transition(opacity 150ms linear);
+		.transition(filter 150ms linear);
+		
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+
+        @media (max-width: 768px) {
+			width: 42px;
+			height: 42px;
+	    }
+    }
+    &:hover {
+        &:before {
+			.opacity(100);
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0);
+        }
+    }
+}
+
+.ab__vg-image_gallery_item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: @base;
+        
+    img {
+	    max-width: 32px;
+    }
+}
+.ab__vg_loading img {
+    width: 100%;
+}
+
+
+.ty-product-block__img-wrapper {
+	
+	.ab__vg-image_gallery_video {
+		
+		img {
+			width: 100%;
+		}
+		
+		@media (min-width: 1540px) {
+			
+			.res_g() when not (@fluidContainerMaxWidth < 1540px) {
+				&:not(.hidden) {
+					height: 100%;
+				}
+				img {
+					height: 100%;
+					width: auto;
+				}
+			}
+			.res_g() when (@fluidContainerMaxWidth > 1540px) {
+				&:not(.hidden) {
+					height: 100%;
+				}
+				img {
+					height: 100%;
+					width: auto;
+				}
+			}
+			.res_g();
+		}
+	}
+	iframe.ab__vg-image_gallery_video {
+		width: 100%;
+        height: 100%;
+		position: relative;
+		z-index: 2;
+	}
+}
+.ab__vg-image_gallery_video {
+	cursor: pointer;
+	
+	&:not(.hidden) {
+	    display: flex;
+	    position: relative;
+	    align-items: center;
+	    justify-content: center;
+	    width: 100%;
+	    height: 100%;
+
+		@media (max-width: 768px) {
+		    height: 100%;
+		    
+		    img {
+			    width: auto;
+		    }
+	    }
+	}
+}
+
+.ab_vg-images-wrapper {
+    & > div:first-of-type {      
+        display: inline-block;
+        float: left;
+        width: 100%;
+    }
+}
+
+.ut2-pb {
+	
+	&:not(.ut2-big-image) .ty-previewer {
+    	@media (min-width: 768px) {
+		    align-items: flex-start;
+		}
+	}
+	.ty-product-thumbnails {
+
+    	&:not(.ab-vertical-thumbnails) {
+    		margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+    	}
+    	@media (min-width: 1025px) {
+            &.ab-vertical-thumbnails {
+                justify-content: flex-start;
+            }
+            &[data-ca-vertical="Y"] {
+            	.ty-product-thumbnails__item {
+                	margin-right: 0;
+            	}
+        	}
+        }
+    	@media (max-width: 1024px) {
+            &.ab-vertical-thumbnails {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }    	
+    	
+        &__item {
+	        padding: 0;
+	        
+	        @media (min-width: 768px) {
+		        margin-right: 3px;
+			    margin-bottom: 3px;
+	        }
+
+	        &.ab__vg-image_gallery_item {
+				
+				.ut2_round(@round: 5px) when (@abt__ut2_general_use_rounding = little) {
+					.border-radius(@round);
+				}
+				.ut2_round(@round: 5px) when (@abt__ut2_general_use_rounding = full) {
+					.border-radius(@round);
+				}
+				.ut2_round();
+    		}
+    		   
+	        @media (max-width: 767px) {
+		        max-width: 50px;
+		        max-height: 50px;
+	        }
+        }
+        &.jcarousel-skin {
+	        .ty-product-thumbnails__item {
+		        display: inline-block;
+		        margin: 0 0 2px 0;
+	        }
+	    }
+    }
+    @media (max-width: 767px) {
+	    .ty-product-img {
+		    height: auto !important;
+	    }
+    }
+}
+
+
+
+.ut2-big-image {
+    .ut2-pb__img-wrapper {
+        iframe.ab__vg-image_gallery_video {
+            max-height: 600px;
+            width: 100%;
+        }
+    }
+    @media (min-width: 768px) {	
+        .ab_vg-images-wrapper, .ut2-pb__img-wrapper, .ty-product-img:not(.ab-vg-vertical) {
+    	    padding-bottom: @pd;
+        }
+    }
+    .ab__vg-videos .ab__vg-video {
+
+	    .res_g() when (@fluidContainerMaxWidth < 1541px) {
+		    max-width: 33.3333%;
+		    
+		    @media (min-width: 1367px) {
+			    &_thumb {
+		            max-height: 190px;
+	            }
+            }
+	    }
+		.res_g();
+		
+        @media (max-width: 1440px) {	    
+            max-width: 33.3333%;
+        }
+        @media (max-width: 1366px) {	    
+            max-width: 50%;
+        }
+    }
+}
+
+.ty-product-thumbnails {
+    margin-top: 0;
+    
+    &.ab-vg-vertical-thumbnails {
+	   margin-top: 0;	   
+    }
+
+    &_gallery {
+        &.ab-vg-vertical-thumbnails {
+    		justify-content: flex-start;
+    		overflow: hidden;
+    		.ab-vertical-gallery-mixin();
+    	    
+            .cm-image-gallery {
+                .ab-vertical-gallery-mixin();
+                
+                .cm-item-gallery {
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    
+                    & > a {
+                        margin: 0;
+                    }
+                }
+            }
+        	.ty-hand {
+    	    	display: block;
+    	    	border: 3px solid transparent;
+    		    background: @base;
+    		    -webkit-transition: all .3s;
+                transition: all .3s;
+                
+                .ut2_round(@round: 5px) when (@abt__ut2_general_use_rounding = little) {
+    				.border-radius(@round);
+    			}
+    			.ut2_round(@round: 5px) when (@abt__ut2_general_use_rounding = full) {
+    				.border-radius(@round);
+    			}
+    			.ut2_round();
+    		    
+    		    &:first-child {
+    			    margin-bottom: 3px;
+    		    }
+    
+    		    &:hover {
+    			    color: @links;
+    			    background: lighten(@base, 2%);
+    		    }
+    	    }
+    	    &:focus .ty-hand {
+    		    &:first-child {
+    			    visibility: visible;
+    		    }		    
+    	    }
+        }
+    }
+	@media (max-width: 1024px) {
+    	height: auto !important;
+    	
+	    &_gallery {
+    	    display: inline-block;
+    	    margin: 10px 0;
+    	    
+    	    &.ab-vg-vertical-thumbnails .ty-hand {
+        	    display: none;
+    	    }
+	    }
+    }
+}
+.ab-vertical, .ab-vg-vertical {
+	float: right;
+}
+
+@media (max-width: 1024px) {  
+    .ab_vg-images-wrapper > div:first-of-type {
+        width: 100% !important;
+        max-height: inherit !important;
+    }
+	.ab-vertical, .ab-vg-vertical, .ab-vertical-thumbnails, .ab-vg-vertical-thumbnails {
+		width: 100% !important;
+	}
+	.ty-product-img {
+		min-height: 280px;
+	}
+	.ab-vertical, .ab-vg-vertical {
+		margin-top: 0;
+	}
+	.ab-vg-j-product_labels {
+		margin-left: 0 !important;
+	}
+	.ab-vg-product_labels {
+		margin-left: 0 !important;
+	}
+}
+
+.ty-quick-view__wrapper {
+    
+    .ut2-pb {
+        &__img-wrapper {    
+    		.ty-product-img {
+        		margin-bottom: 0;
+        		
+        		img.ty-pict {
+            		width: 100%;
+            		max-height: 100%;
+        		}
+    		}
+    		div.ty-product-thumbnails {
+            	width: 100%;
+            	margin-top: 10px;
+                
+                &__item {
+                	max-width: 44px;
+                    max-height: 44px;
+            	}
+        	}
+            &.quick-view {
+                padding-right: @pd;
+            }
+        }
+    	.ab__vg-image_gallery_item img {
+        	max-width: 24px;
+    	}
+	}
+	.ty-product-thumbnails__item {
+        max-width: 48px;
+        max-height: 48px;
+	}
+}
+
+.ab-vertical-gallery-mixin() {
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;    
+    }
+}
+
+.cm-popup-box[id^="ab__vg_video"] {
+    .object-container {
+	    text-align: center;
+        width: 100%;
+        min-height: 400px;
+        max-height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (min-width: 970px) and (min-height: 600px) {
+	        height: 600px !important;
+	        
+	        iframe {
+	            min-height: auto !important;
+	        }
+        }
+        @media (max-width: 969px) and (min-height: 320px) {
+	        height: inherit !important;
+	        min-height: auto;
+	        top: 10px !important;
+	        
+	        iframe {
+	            min-height: 320px;
+	        }       
+        }
+        @media (max-width: 969px) and (min-height: 768px) {
+	        height: 480px !important;
+	        
+	        iframe {
+	            min-height: 100%;
+	        }  
+        }
+    }
+}
+
+.cm-ab__vg-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+  
+    &.ab__vg_loaded {
+        opacity: 1;
+    }
+}

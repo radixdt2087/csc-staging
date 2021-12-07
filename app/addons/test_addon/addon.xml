@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<addon scheme='2.0'>
+    <id>test_addon</id>
+    <version>1.0</version>
+    <name>Test Addon</name>
+    <description>testing purpose.</description>
+    <priority>100500</priority>
+</addon>

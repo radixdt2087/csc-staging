@@ -1,0 +1,128 @@
+.otp-t1-main-box{
+    text-align: center;
+}
+
+.otp-t1-section{
+    margin-left: auto;
+    margin-right: auto;
+    height: 85px;
+}
+
+.otp-t1-circle_done{
+    background: #156136;
+}
+.otp-t1-circle{
+    border: 1px solid #d5d5da;
+    border-radius: 40px;
+    display: inline-block;
+    height: 65px;
+    float: left;
+    width: 66px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.otp-t1-main-box{
+    box-sizing: border-box;
+}
+
+.otp-t1-a-cusror{
+    cursor:help;
+}
+
+.otp-t1-label{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 32px;
+    margin-top: 16px;
+    font-size: 17px;
+    color: white;
+    box-sizing: border-box;
+}
+.otp-t1-label-done{
+    background: #8bc435 none repeat scroll 0 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+    color: #fff;
+}
+
+.otp-t1-label-activ{
+    background: #0c95be none repeat scroll 0 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+    color: #0c95be;
+    -webkit-animation-name: otp-t1-label-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: otp-t1-label-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes otp-t1-label-animation {
+    0%   {background-color:rgb(230, 230, 111);}
+    25%  {background-color:rgb(204, 204, 32);}
+    50% {background-color:rgb(49, 167, 167);}
+    75%  {background-color:rgb(70, 192, 201);}
+    100%  {background-color:rgb(133, 228, 231);}
+}
+
+/* Standard syntax */
+@keyframes otp-t1-label-animation {
+    0%   {background-color:rgb(230, 230, 111);}
+    25%  {background-color:rgb(204, 204, 32);}
+    50% {background-color:rgb(49, 167, 167);}
+    75%  {background-color:rgb(70, 192, 201);}
+    100%  {background-color:rgb(133, 228, 231);}
+}
+
+.otp-t1-title{
+    margin-top: 17px;
+    line-height: 30px;
+    display: block;
+    font-size: 12px!important;
+}
+
+.otp-t1-bar{
+    display: inline-block;
+    width: 70px;
+    border: 0.1px solid lightgrey;
+    height: 6px;
+    position: relative;
+    top: 30px;
+    float: left;
+}
+
+.otp-t1-bar-done{
+    background: #78ab2c;
+}
+
+.otp-t1-bar-activ{
+    -webkit-animation-name: otp-t1-bar-animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: otp-t1-bar-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes otp-t1-bar-animation {
+    100% {background:linear-gradient(to right, #EEE 40%, #FFF 60%);}
+}
+
+/* Standard syntax */
+@keyframes otp-t1-bar-animation {
+    100% {background:linear-gradient(to right, #EEE 40%, #FFF 60%);}
+}
+
+@media screen and (max-width: 480px) {
+     .otp-t1-section{
+        width: 200px!important;
+    }
+    .otp-t1-bar{
+        width:30px;
+    }
+}

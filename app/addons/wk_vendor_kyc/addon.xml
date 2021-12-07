@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+	<id>wk_vendor_kyc</id>
+	<version>1.0</version>
+	<name>wk_vendor_kyc</name>
+	<priority>230129</priority>
+	<position>100</position>
+	<status>active</status>
+	<default_language>en</default_language>
+	<auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+	<supplier>Webkul</supplier>
+    <supplier_link>https://store.webkul.com/CS-Cart.html</supplier_link>
+    <functions>
+        <item for="install">fn_wk_vendor_kyc_install</item>
+    </functions>
+     <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+            	 <items>
+                     <item id="setting_general_template">
+                        <type>template</type>
+                        <default_value>wk_vendor_kyc.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+             <section id="mail_template">
+                <items>
+                     <item id="setting_mail_template">
+                        <type>template</type>
+                        <default_value>wk_vendor_kyc_mail_templating.tpl</default_value>
+                    </item>
+                </items>
+            </section>    
+        </sections>
+    </settings>
+    <queries>
+        <item for="install" editions="MULTIVENDOR,ULTIMATE">
+         REPLACE INTO ?:privileges (privilege, is_default, section_id) VALUES ('manage_wk_vendor_kyc', 'Y', 'addons');
+        </item>
+ 
+        <item for="install" editions="MULTIVENDOR,ULTIMATE">
+            REPLACE INTO ?:privileges (privilege, is_default, section_id) VALUES ('view_wk_vendor_kyc', 'Y', 'addons');
+        </item>
+
+        <item for="uninstall" editions="MULTIVENDOR,ULTIMATE">
+            DELETE FROM ?:privileges WHERE privilege IN ('manage_wk_vendor_kyc', 'view_wk_vendor_kyc');
+        </item>
+
+        <item>DROP TABLE IF EXISTS ?:wk_vendor_kyc_type;</item>
+        <item>
+            CREATE TABLE `?:wk_vendor_kyc_type` (
+                `kyc_id` mediumint(8) unsigned NOT NULL auto_increment,
+                `status` char(1) NOT NULL default 'A',
+                `is_required` char(1) default 'N',
+                PRIMARY KEY  (`kyc_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_vendor_kyc_type;</item>
+
+        <item>DROP TABLE IF EXISTS ?:wk_vendor_kyc_type_description;</item>
+        <item>
+            CREATE TABLE `?:wk_vendor_kyc_type_description` (
+                `object_id` mediumint(8) unsigned NOT NULL default '0',
+                `lang_code` char(2) NOT NULL default '',
+                `description` varchar(100) NOT NULL default '',
+                PRIMARY KEY  (`object_id`,`lang_code`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_vendor_kyc_type_description;</item>
+
+        <item>DROP TABLE IF EXISTS ?:wk_vendor_kyc_data;</item>
+        <item>
+            CREATE TABLE `?:wk_vendor_kyc_data` (
+                `kyc_id` mediumint(8) unsigned NOT NULL auto_increment,
+                `kyc_type` mediumint(8) NOT NULL default 0,
+                `kyc_id_number` varchar(50) NOT NULL default '',
+                `company_id` mediumint(8) NOT NULL default 0,
+                `upload_date` int(14)  NOT NULL default 0,
+                `status` char(2) default 'N',
+                `reason` text default '',
+                `is_required` smallint(2)NOT NULL default 0,
+                PRIMARY KEY  (`kyc_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_vendor_kyc_data;</item>
+
+        <item>DROP TABLE IF EXISTS ?:wk_vendor_kyc_data_description;</item>
+        <item>
+            CREATE TABLE `?:wk_vendor_kyc_data_description` (
+                `object_id` mediumint(8) unsigned NOT NULL default '0',
+                `lang_code` char(2) NOT NULL default '',
+                `kyc_name` varchar(255) NOT NULL default '',
+                PRIMARY KEY  (`object_id`,`lang_code`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_vendor_kyc_data_description;</item>
+
+        <item>DROP TABLE IF EXISTS ?:wk_vendor_kyc_files;</item>
+        <item>
+            CREATE TABLE `?:wk_vendor_kyc_files` (
+                `file_id` mediumint(8) unsigned NOT NULL auto_increment,
+                `kyc_id` mediumint(8) NOT NULL default 0,
+                `kyc_file` varchar(255) NOT NULL default '',
+                PRIMARY KEY  (`file_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_vendor_kyc_files;</item>
+
+        <item for="install">ALTER TABLE ?:companies DROP upload_kyc_request_sent;</item>
+        <item for="install">
+            ALTER TABLE ?:companies ADD upload_kyc_request_sent smallint(2) NOT NULL DEFAULT 0;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:companies DROP upload_kyc_request_sent;
+        </item>
+
+        <item for="install">ALTER TABLE ?:companies DROP upload_kyc_request_time;</item>
+        <item for="install">
+            ALTER TABLE ?:companies ADD upload_kyc_request_time int(14) NOT NULL DEFAULT 0;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:companies DROP upload_kyc_request_time;
+        </item>
+
+        <item for="install">ALTER TABLE ?:companies DROP wk_upload_exp;</item>
+        <item for="install">
+            ALTER TABLE ?:companies ADD wk_upload_exp smallint(1) NOT NULL DEFAULT 0;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:companies DROP wk_upload_exp;
+        </item>
+    </queries>
+</addon>

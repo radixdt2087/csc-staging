@@ -1,0 +1,2 @@
+<?php
+ use Tygh\Enum\AffiliateUserTypes; function fn_settings_variants_addons_sd_affiliate_affiliates_usergroup() { $variants = [ '0' => __('none') ]; $usergroups = fn_get_usergroups([ 'type' => AffiliateUserTypes::PARTNER, 'include_default' => false ], DESCR_SL); foreach ($usergroups as $group_id => $data) { $variants[$group_id] = $data['usergroup']; } return $variants; }

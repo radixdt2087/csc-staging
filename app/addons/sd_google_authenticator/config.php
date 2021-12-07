@@ -1,0 +1,2 @@
+<?php
+ if (!defined('BOOTSTRAP')) { die('Access denied'); } fn_define('TWO_STEPS_VERIFICATION_SETTING_NAME', 'two_steps_verification'); fn_define('SECURITY_SECTION_NAME', 'Security'); fn_define('VERIFICATION_HASH', 'verification_hash'); fn_define('THIRTY_DAYS_TO_SECONDS', 30 * 24 * 60 * 60); 

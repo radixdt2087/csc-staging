@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-order_tracking_page\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Generator: webkul.com\n"
+"X-Crowdin-Project: cs-cart-order_tracking_page\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /release-4.8.1/addons/order_tracking_page.po\n"
+"Last-Translator: webkul <support@webkul.com>\n"
+"PO-Revision-Date: 2018-08-04 T08:17:23+0000\n"
+
+msgctxt "Addons::name::order_tracking_page"
+msgid "Order Status Tracker"
+msgstr "Статус заказа"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "Russian Federation"
+
+msgctxt "Addons::description::order_tracking_page"
+msgid "Allow admin to set tracking in the graphical & interactive way for customers."
+msgstr "Разрешить администратору устанавливать отслеживание графическим и интерактивным способом для клиентов."
+
+msgctxt "SettingsSections::order_tracking_page::section_1"
+msgid "Generic settings"
+msgstr "Общие настройки"
+
+msgctxt "SettingsOptions::order_tracking_page::wk_general"
+msgid "Configuration"
+msgstr "конфигурация"
+
+msgctxt "SettingsOptions::order_tracking_page::wk_select_template"
+msgid "Select Template"
+msgstr "Выбрать шаблон"
+
+msgctxt "SettingsTooltips::order_tracking_page::wk_select_template"
+msgid "Select the Template to show the customer on order tracking page"
+msgstr "Выберите шаблон, чтобы отобразить клиента на странице отслеживания заказов."
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_one"
+msgid "Template One"
+msgstr "Шаблон 1"
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_two"
+msgid "Map Template"
+msgstr "Шаблон карты"
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_three"
+msgid "Linear Template One"
+msgstr "Линейный шаблон"
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_four"
+msgid "Linear Template Two"
+msgstr "Линейный шаблон"
+
+msgctxt "Languages::order_tracking_page_menu_description"
+msgid "Manage Order status tracker, add state, arrange state, edit state, etc."
+msgstr "Управление отслеживанием состояния заказа, добавление состояния, упорядочение состояния, редактирование состояния и т. Д.."
+
+msgctxt "Languages::order_tracking_page"
+msgid "Order Status Tracker"
+msgstr "Статус заказа"
+
+msgctxt "Languages::manage_state"
+msgid "Manage State"
+msgstr "Управление государством"
+
+msgctxt "Languages::selected_status"
+msgid "Order Status"
+msgstr "Статус заказа"
+
+msgctxt "Languages::otp_add_label"
+msgid "Add State"
+msgstr "Добавить состояние"
+
+msgctxt "Languages::text_labels_have_been_deleted"
+msgid "States are deleted successfully."
+msgstr "Государства удаляются успешно."
+
+msgctxt "Languages::text_label_have_been_deleted"
+msgid "State is deleted successfully."
+msgstr "Состояние удалено успешно."
+
+msgctxt "Languages::select_status"
+msgid "Select Status"
+msgstr "Выберите статус"
+
+msgctxt "Languages::icon_at_activate_title"
+msgid "Icon: "
+msgstr "Значок: "
+
+msgctxt "Languages::chr_allow"
+msgid "Only Characters allowed..."
+msgstr "Разрешены только символы..."
+
+msgctxt "Languages::active/disabled"
+msgid "Active/Disabled"
+msgstr "Активно/Отключено"
+
+msgctxt "Languages::otp_state_ad_tooltip"
+msgid "Select Order Status Active/Disabled"
+msgstr "Выберите статус заказа активен/отключен"
+
+msgctxt "Languages::icon_at_activate_text"
+msgid "Shows icon when the state is achieved."
+msgstr "Показывает значок, когда состояние достигнуто."
+
+msgctxt "Languages::icon_at_deactivate_title"
+msgid "Icon: "
+msgstr "Значок: "
+
+msgctxt "Languages::icon_at_deactivate_text"
+msgid "Show icon when state has to be achieved means state is in pending state."
+msgstr "Показывать значок, когда состояние должно быть достигнуто, означает, что состояние находится в состоянии ожидания."
+
+msgctxt "Languages::label_update"
+msgid "Update State"
+msgstr "Обновить состояние"
+
+msgctxt "Languages::max_limit_of_creating_labels"
+msgid "Doesn't allow to create more state because you are at max limit."
+msgstr "Не позволяет создать больше состояний, поскольку вы находитесь на максимальном пределе."
+
+msgctxt "Languages::track_order"
+msgid "Track Order"
+msgstr "Заказ дорожки"
+
+msgctxt "Languages::label_add"
+msgid "New State"
+msgstr "Новое государство"
+
+msgctxt "Languages::otp_state"
+msgid "State Title"
+msgstr "Название государства"
+
+msgctxt "Languages::otp_description_tooltip"
+msgid "it gives the information about the state at the backend. At the manage state page of order status tracker."
+msgstr "Он предоставляет информацию о состоянии на бэкэнд. На странице состояния управления отслеживанием состояния заказа."
+
+
+msgctxt "Languages::otp_position_tooltip"
+msgid "Enter the numeric value to set the arrangement of states on the order detail page. It works in ascending order."
+msgstr "Введите числовое значение, чтобы установить расположение состояний на странице подробностей заказа. Он работает в порядке возрастания."
+
+
+msgctxt "Languages::otp_state_title_tooltip"
+msgid "Title of the state shown on the order detail page."
+msgstr "Заголовок состояния, отображаемого на странице подробных сведений о заказе."
+
+
+msgctxt "Languages::otp_selected_status_tooltip"
+msgid "Select the order status of the state. You select multiple status for one state. If the order status match to state status then this state is active state."
+msgstr "Выберите статус заказа состояния. Вы выбираете несколько статусов для одного состояния. Если статус заказа соответствует состоянию состояния, то это состояние является активным состоянием."
+
+msgctxt "Languages::otp_general_info"
+msgid "General"
+msgstr "общий"
+
+msgctxt "Languages::otp_icons_section"
+msgid "Icons"
+msgstr "Иконки"
+
+msgctxt "Languages::wk_webkul_user_guide_content"
+msgid "Congratulations!!! <b>\"[addon_name]\"</b> Add-on is successfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+msgstr "Поздравляем !!! <b>\"[addon_name]\"</b> Надстройка успешно установлена. <ul class = 'inline social-share'> <li> <a href='[support_link]' target='_blank' class='uibutton large confirm'> Ссылка на поддержку </a> </li> <li> <a href = '[user_guide]' class = 'uibutton large confirm' target = '_ blank'> Руководство пользователя </a> </li> </ul>"
+
+msgctxt "Languages::privileges.manage_wk_order_tracking"
+msgid "Manage Tracking orders"
+msgstr "Управление заказами отслеживания"
+
+msgctxt "Languages::privileges.view_wk_order_tracking"
+msgid "View Tracking orders"
+msgstr "Просмотреть заказы на отслеживание"

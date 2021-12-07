@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+    <id>affiliate_merchant_product</id>
+    <name>Affiliate Merchant and Products</name>
+    <description>This addon display affiliate merchant and product details</description>
+    <version>1.0</version>
+    <default_language>en</default_language>
+    <priority>100503</priority>
+    <status>active</status>
+    <supplier>Source Rad</supplier>
+    <!--<queries>
+        <item for="install">
+            ALTER TABLE ?:users
+             ADD COLUMN `email_code` VARCHAR(50) NULL
+        </item>
+         <item for="install">
+            ALTER TABLE ?:users
+             ADD COLUMN `verify_email` TINYINT NULL
+        </item>
+         <item for="install">
+            ALTER TABLE ?:companies
+            ADD COLUMN `affiliate_merchant` VARCHAR(150) NULL
+        </item>
+         <item for="install">
+            ALTER TABLE ?:categories
+            ADD COLUMN `affiliate_categoryid` mediumint(8) NULL
+        </item>
+
+        <item for="uninstall">
+            ALTER TABLE ?:users
+            DROP COLUMN email_code
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:users
+            DROP COLUMN verify_email
+        </item>
+        
+         <item for="uninstall">
+            ALTER TABLE ?:companies
+            DROP COLUMN affiliate_merchant
+        </item>
+         <item for="uninstall">
+            ALTER TABLE ?:categories
+            DROP COLUMN affiliate_categoryid
+        </item>
+
+    </queries>
+    -->
+</addon>

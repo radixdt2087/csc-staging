@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>full_page_cache</id>
+    <version>0.0.8</version>
+    <priority>20000</priority>
+    <status>disabled</status>
+    <default_language>en</default_language>
+
+    <compatibility>
+        <core_version>
+            <min>4.3.6</min>
+        </core_version>
+        <php_extensions>
+            <curl>
+                <supported>Y</supported>
+            </curl>
+        </php_extensions>
+    </compatibility>
+
+    <settings edition_type="ROOT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="varnish">
+                        <type>header</type>
+                    </item>
+                    <item id="varnish_host">
+                        <type>input</type>
+                        <default_value>127.0.0.1:80</default_value>
+                    </item>
+                    <item id="common">
+                        <type>header</type>
+                    </item>
+                    <item id="marketplace_license_number">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <functions>
+        <item for="install">fn_full_page_cache_install</item>
+        <item for="uninstall">fn_full_page_cache_uninstall</item>
+    </functions>
+
+    <files>
+        <file>esi.php</file>
+        <file>var/conf/varnish</file>
+    </files>
+</addon>

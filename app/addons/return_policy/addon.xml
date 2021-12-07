@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+	<id>return_policy</id>
+	<name>Return Policy</name>
+	<description>This addon get return policy for products from ICH application.</description>
+	<version>1.0</version>
+	<priority>100500</priority>
+	<status>active</status>
+	<supplier>Source Che</supplier>
+    <supplier_link>https://www.chetu.com/</supplier_link>
+    
+    <authors>
+        <author>
+            <name>Source Che</name>
+            <url>https://www.chetu.com/</url>
+        </author>
+    </authors> 
+
+	<!--queries>
+		<item for="install">
+            	ALTER TABLE `cscart_product_descriptions` ADD `return_policy` TEXT NULL AFTER `promo_text`;
+		</item>
+	</queries -->
+</addon>

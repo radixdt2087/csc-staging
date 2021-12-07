@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>sd_youtube</id>
+    <version>4.10.16</version>
+    <priority>1990</priority>
+    <position>1</position>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <supplier>Simtech Development</supplier>
+    <supplier_link>http://www.simtechdev.com</supplier_link>
+    <authors>
+        <author>
+            <name>Simtech Development</name>
+            <email>sales@simtechdev.com</email>
+            <url>http://www.simtechdev.com</url>
+        </author>
+    </authors>
+    <compatibility>
+        <core_version>
+            <min>4.4.0</min>
+        </core_version>
+        <core_edition>ULTIMATE,MULTIVENDOR</core_edition>
+    </compatibility>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    
+                    <item id="show_player_controls">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="show_video_on_category_page">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="replace_main_img">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="autoplay">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="big_picture_page_video_width">
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item>
+            ALTER TABLE ?:products
+            ADD COLUMN youtube_link varchar(255),
+            ADD KEY youtube_link (youtube_link);
+        </item>
+        <item>
+            ALTER TABLE ?:products
+            ADD COLUMN show_youtube_video varchar(1) DEFAULT 'Y';
+        </item>
+        <item>
+            ALTER TABLE ?:products
+            ADD COLUMN replace_main_image varchar(1);
+        </item>
+        <item>
+            ALTER TABLE ?:products
+            ADD COLUMN position_youtube smallint(5);
+        </item>
+        <item>
+            CREATE TABLE IF NOT EXISTS ?:product_videos (
+                video_id mediumint(8) unsigned NOT NULL auto_increment,
+                product_id int(10) unsigned NOT NULL DEFAULT '0',
+                company_id int(11) unsigned NOT NULL,
+                comment varchar(255) CHARACTER SET utf8,
+                youtube_link varchar(255) CHARACTER SET utf8 NOT NULL,
+                position smallint(5) unsigned NOT NULL default '0',
+                PRIMARY KEY (video_id, product_id, company_id)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item editions="ULTIMATE">
+            CREATE TABLE IF NOT EXISTS ?:ult_product_videos (
+                video_id mediumint(8) unsigned NOT NULL auto_increment,
+                product_id int(10) unsigned NOT NULL DEFAULT '0',
+                company_id int(11) unsigned NOT NULL,
+                comment varchar(255) CHARACTER SET utf8,
+                youtube_link varchar(255) CHARACTER SET utf8 NOT NULL,
+                position smallint(5) unsigned NOT NULL default '0',
+                PRIMARY KEY (video_id, product_id, company_id)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item editions="ULTIMATE">
+            ALTER TABLE ?:ult_product_descriptions ADD youtube_link varchar(255), ADD show_youtube_video varchar(1) DEFAULT 'Y', ADD replace_main_image varchar(1);
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products DROP youtube_link;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products DROP show_youtube_video;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products DROP position_youtube;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS ?:product_videos
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products DROP replace_main_image;
+        </item>
+        <item for="uninstall">
+            DROP TABLE IF EXISTS ?:ult_product_videos;
+        </item>
+        <item for="uninstall" editions="ULTIMATE">
+            ALTER TABLE ?:ult_product_descriptions DROP youtube_link, DROP show_youtube_video, DROP replace_main_image;
+        </item>
+    </queries>
+    <functions>
+        <item for="uninstall">
+            fn_sd_youtube_delete_youtube_filters
+        </item>
+    </functions>
+<marketplace_product_id>1608</marketplace_product_id></addon>

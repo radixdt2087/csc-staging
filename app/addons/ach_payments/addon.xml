@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+    <id>ach_payments</id>
+    <version>1.0</version>
+    <name>ACH Payments with Digitzs Payment Processor</name>
+    <description>This addons helps to do ACH payments through Digitzs Payment processor</description>
+    <priority>100502</priority>
+    <status>active</status>
+    <supplier>Source Rad</supplier>
+    <compatibility>
+        <core_edition>
+            MULTIVENDOR
+        </core_edition>
+    </compatibility>
+    <settings edition_type="ROOT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="cashback">
+                        <name>Cashback %</name>
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item for="install">
+            CREATE TABLE `?:ach_details`(
+            `id` int(11)  NOT NULL AUTO_INCREMENT,
+            `user_id` int(11) NOT NULL,
+            `ach_token` varchar(250) NOT NULL,
+            `customer_id` varchar(250) NOT NULL,
+            `isDefault` varchar(250) NOT NULL,
+            `isVerify` varchar(250) NOT NULL,
+            `verifyCode` varchar(250) NOT NULL,
+            `isDeleted` varchar(250) NOT NULL DEFAULT '0',
+             PRIMARY KEY (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:ach_details;</item>
+        <item for="install">
+            CREATE TABLE `?:cashback_transaction_history`(
+            `id` int(11)  NOT NULL AUTO_INCREMENT,
+            `user_id` int(11) NOT NULL,
+            `ach_id` int(11) NOT NULL,
+            `withdrawl_amt` varchar(250) NOT NULL,
+            `withdrawl_date` varchar(255) NOT NULL,
+            `status` varchar(250) NOT NULL,
+            `isVerify` varchar(250) NOT NULL,
+            `verifyCode` varchar(250) NOT NULL,
+            PRIMARY KEY (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:cashback_transaction_history;</item>
+        <item for="install">
+            CREATE TABLE `?:cashback_wallet`(
+            `id` int(11)  NOT NULL AUTO_INCREMENT,
+            `user_id` int(11) NOT NULL,
+            `wallet_amt` varchar(250) NOT NULL,
+            `unclear_amt` varchar(250) NOT NULL,
+            `clear_amt` varchar(255) NOT NULL,
+            `status` varchar(250) NOT NULL,
+            `updated_at` varchar(250) NOT NULL,
+            PRIMARY KEY (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:cashback_wallet;</item>
+    </queries>
+</addon>
+
+
+

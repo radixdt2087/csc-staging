@@ -1,0 +1,11 @@
+div.bmicon-video-gallery {
+    background-image: url('../../../media/images/addons/sd_youtube/icon-1-YoutubeAddon.png');
+}
+
+div.bmicon-youtube-video {
+    background-image: url('../../../media/images/addons/sd_youtube/icon-1-YoutubeAddon.png');
+}
+
+.table .product-name-column {
+    min-width: auto;
+}

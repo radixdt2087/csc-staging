@@ -1,0 +1,96 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "English"
+
+msgctxt "Addons::name::wk_vendor_subdomain"
+msgid "Vendor Subdomain"
+msgstr "Vendor Subdomain"
+
+msgctxt "Addons::description::wk_vendor_subdomain"
+msgid "Allows the vendors to have their own subdomain"
+msgstr "Allows the vendors to have their own subdomain"
+
+msgctxt "Languages::wk_vendor_subdomain"
+msgid "Vendor Subdomain"
+msgstr "Vendor Subdomain"
+
+msgctxt "Languages::wk_webkul_user_guide_content"
+msgid "Congratulation!! <b>\"[addon_name]\"</b> Add-on is succesfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+msgstr "Congratulation!! <b>\"[addon_name]\"</b> Add-on is succesfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+
+msgctxt "SettingsOptions::wk_vendor_subdomain::profile_page_seo"
+msgid "Vendor Profile Page SEO"
+msgstr "Vendor Profile Page SEO"
+
+msgctxt "SettingsTooltips::wk_vendor_subdomain::profile_page_seo"
+msgid "This SEO will work for subdomain holded vendor. It will shown on vendor profile page."
+msgstr "This SEO will work for subdomain holded vendor. It will shown on vendor profile page."
+
+msgctxt "SettingsOptions::wk_vendor_subdomain::default_subdomain"
+msgid "Default Subdomain"
+msgstr "Default Subdomain"
+
+msgctxt "SettingsTooltips::wk_vendor_subdomain::default_subdomain"
+msgid "Subdomain which will be shown in case of no subdomain entered by vendor/admin"
+msgstr "Subdomain which will be shown in case of no subdomain entered by vendor/admin"
+
+msgctxt "SettingsVariants::wk_vendor_subdomain::default_subdomain::store_domain"
+msgid "No Subdomain"
+msgstr "No Subdomain"
+
+msgctxt "SettingsVariants::wk_vendor_subdomain::default_subdomain::vendor_company_name"
+msgid "Vendor Company Name"
+msgstr "Vendor Company Name"
+
+msgctxt "Languages::wk_vendor_subdomain_menu_description"
+msgid "Create and update vendor subdomain for storefront"
+msgstr "Create and update vendor subdomain for storefront"
+
+msgctxt "Languages::privileges.manage_wk_vendor_subdomain"
+msgid "Manage Vendor Subdomain"
+msgstr "Manage Vendor Subdomain"
+
+msgctxt "Languages::privileges.view_wk_vendor_subdomain"
+msgid "View Vendor Subdomain"
+msgstr "View Vendor Subdomain"
+
+msgctxt "Languages::subdomain"
+msgid "Subdomain"
+msgstr "Subdomain"
+
+msgctxt "Languages::vendor_subdomain"
+msgid "Vendor Subdomain"
+msgstr "Vendor Subdomain"
+
+msgctxt "Languages::manage_vendor_subdomain"
+msgid "Manage Vendor Subdomain"
+msgstr "Manage Vendor Subdomain"
+
+msgctxt "Languages::update_subdomain"
+msgid "Update Subdomain"
+msgstr "Update Subdomain"
+
+msgctxt "Languages::add_subdomain"
+msgid "Add Subdomain"
+msgstr "Add Subdomain"
+
+msgctxt "Languages::add_subdomain_title"
+msgid "Add New Subdomain"
+msgstr "Add New Subdomain"
+
+msgctxt "Languages::subdomain_not_available_type_another_subdomain"
+msgid "Subdomain not available!! Have  been assigned to another vendor, Enter new subdomain"
+msgstr "Subdomain not available!! Have  been assigned to another vendor, Enter new subdomain"
+
+msgctxt "Languages::allowed_vendor_subdomain"
+msgid "Allow Vendor Subdomain"
+msgstr "Allow Vendor Subdomain"
+
+msgctxt "Languages::profile_page_seo"
+msgid ""

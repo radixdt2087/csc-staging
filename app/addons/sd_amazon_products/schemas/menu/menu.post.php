@@ -1,0 +1,2 @@
+<?php
+ use Tygh\Registry; $schema['central']['products']['items']['sd_amz_reports'] = array( 'attrs' => array( 'class' => 'is-addon' ), 'href' => 'amazon_reports.manage', 'position' => 1000, ); if (Registry::get('addons.sd_amazon_products.sync_orders') == 'Y') { $schema['central']['orders']['items']['amazon_orders'] = array( 'href' => 'amazon_orders.manage', 'position' => 1000, 'attrs' => array( 'class' => 'is-addon' ), ); } return $schema; 

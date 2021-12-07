@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+    <id>digitzs_connect</id>
+    <version>1.0</version>
+    <name>Digitzs Connect</name>
+    <description>The Digitzs Connect payment addon gives you painless payment and allows store owners to void the distribution of payment among the vendors. By using this addon single payment which is made by the customer can be easily shared with the vendor and site owner.</description>
+    <priority>100501</priority>
+    <status>active</status>
+    <supplier>Source Rad</supplier>
+    <compatibility>
+        <core_edition>
+            MULTIVENDOR
+        </core_edition>
+        <dependencies>vendor_plans</dependencies>
+    </compatibility>
+    <settings edition_type="ROOT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="modes">
+                    <name>Mode</name>
+                    <type>selectbox</type>
+                    <default_value>Test</default_value>
+                        <variants>
+                            <item id="Test" value="https://test.digitzsapi.com/test">
+                                <name>Test</name>
+                            </item>
+                            <item id="Live" value="#">
+                                <name>Live</name>
+                            </item>
+                        </variants>
+                    </item>                   
+                    <item id="app_id">
+                        <name>App Id</name>
+                        <type>input</type>
+                    </item>
+                     <item id="api_key">
+                        <name>API Key</name>
+                        <type>input</type>
+                    </item>
+                    <item id="admin_merchant_id">
+                        <name>Admin Merchant Id</name>
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item for="install">
+            ALTER TABLE ?:companies
+            ADD COLUMN digitzs_connect_account_id VARCHAR(128) NOT NULL DEFAULT ''
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:companies
+            DROP COLUMN digitzs_connect_account_id
+        </item>
+
+        <item for="install">
+            INSERT INTO ?:language_values (lang_code, name, value) VALUES ('en','digitzs_connect.digitzs','Digitzs Connect');
+        </item>
+        <item for="uninstall">
+            DELETE FROM ?:language_values WHERE name LIKE 'digitzs_connect.digitzs';
+        </item>
+        <item for="install">
+            CREATE TABLE `?:vendor_details` (
+            `id` int(11) NOT NULL AUTO_INCREMENT,
+            `first_name` varchar(255) NOT NULL,
+            `last_name` varchar(255) DEFAULT NULL,
+            `personal_email` varchar(255) NOT NULL,
+            `day_phone` varchar(20) NOT NULL,
+            `evening_phone` varchar(55) NOT NULL,
+            `birth_date` varchar(20) NOT NULL,
+            `social_security` int(11) DEFAULT NULL,
+            `personal_address_line1` varchar(255) NOT NULL,
+            `personal_address_line2` varchar(255) NOT NULL,
+            `personal_city` varchar(55) NOT NULL,
+            `personal_state` varchar(55) NOT NULL,
+            `personal_zip` varchar(20) NOT NULL,
+            `personal_country` varchar(55) NOT NULL,
+            `homepostalcheck` varchar(250) DEFAULT NULL,
+            `url` varchar(255) NOT NULL,
+            `business_name` varchar(255) NOT NULL,
+            `ein` varchar(100) NOT NULL,            
+            `business_address_line1` varchar(255) NOT NULL,
+            `business_address_line2` varchar(255) NOT NULL,
+            `business_city` varchar(255) NOT NULL,
+            `business_state` varchar(10) NOT NULL,
+            `business_zipcode` varchar(100) NOT NULL,
+            `business_country` varchar(10) NOT NULL,
+            `bank_name` varchar(55) NOT NULL,
+            `account_ownership` varchar(55) NOT NULL,
+            `account_type` varchar(55) NOT NULL,
+            `account_name` varchar(255) NOT NULL,
+            `account_number` varchar(255) NOT NULL,
+            `routing_number` varchar(255) NOT NULL,
+            `company_id` int(11) NOT NULL,
+            `merchant_agreement` INT NOT NULL,
+            `ip_address` VARCHAR(55) NOT NULL,
+            `timestamp` varchar(255) NOT NULL,
+            `verify` TINYINT NOT NULL DEFAULT '0',
+            `email_code` VARCHAR(55) NOT NULL,
+             PRIMARY KEY (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:vendor_details;</item>
+        <item for="install">
+        ALTER TABLE ?:users
+        ADD COLUMN `card_number` varchar(255) NOT NULL DEFAULT '';   
+        </item>
+        <item for="install">
+        ALTER TABLE ?:users
+        ADD COLUMN `valid_thru` varchar(55) NOT NULL DEFAULT ''; 
+        </item>
+        <item for="install">
+        ALTER TABLE ?:users
+        ADD COLUMN `card_holder_name` varchar(255) NOT NULL DEFAULT ''; 
+        </item>
+        <item for="uninstall">
+        ALTER TABLE ?:users
+        DROP COLUMN card_number;  
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:users
+            DROP COLUMN valid_thru;  
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:users
+            DROP COLUMN card_holder_name;
+        </item>
+        <item for="install">
+            ALTER TABLE ?:products
+            ADD COLUMN override_commission varchar(250) DEFAULT 'no';
+        </item>
+        <item for="install">
+            ALTER TABLE ?:products
+            ADD COLUMN product_commission varchar(250) DEFAULT NULL; 
+        </item>
+        <item for="install">
+            ALTER TABLE ?:products
+            ADD COLUMN product_commission_fee DECIMAL(12,2) DEFAULT NULL; 
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products
+            DROP COLUMN override_commission;  
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products
+            DROP COLUMN product_commission;  
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products
+            DROP COLUMN product_commission_fee;
+        </item>
+        <item for="install">
+            ALTER TABLE ?:order_details
+            ADD COLUMN wesave_commission varchar(250) DEFAULT NULL;
+        </item>
+        <item for="install">
+            ALTER TABLE ?:order_details
+            ADD COLUMN wesave_commission_amt DECIMAL(12,2) DEFAULT NULL;
+        </item>
+        <item for="install">
+            ALTER TABLE ?:order_details
+            ADD COLUMN transaction_fee varchar(250) DEFAULT NULL; 
+        </item>
+        <item for="install">
+            ALTER TABLE ?:order_details
+            ADD COLUMN vendor_profit DECIMAL(12,2) DEFAULT NULL; 
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:order_details
+            DROP COLUMN wesave_commission;  
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:order_details
+            DROP COLUMN wesave_commission_amt;  
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:order_details
+            DROP COLUMN transaction_fee;  
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:order_details
+            DROP COLUMN vendor_profit;
+        </item>
+    </queries>
+    <functions>
+        <item for="install">fn_digitzs_connect_add_payment_processor</item>
+        <item for="uninstall">fn_digitzs_connect_remove_payment_processor</item>
+    </functions>
+</addon>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+	<id>ch_custom_reports</id>
+	<name>CS-Cart RDE Reports</name>
+	<description>This addon get RDE reports from ICH application.</description>
+	<version>1.0</version>
+	<priority>100510</priority>
+	<status>active</status>
+	<supplier>Source Che</supplier>
+    <supplier_link>https://www.chetu.com/</supplier_link>
+    
+    <authors>
+        <author>
+            <name>Source Che</name>
+            <url>https://www.chetu.com/</url>
+        </author>
+    </authors> 
+	<!--queries>
+        <item for="install">DROP TABLE IF EXISTS ?:advanced_addon_data;</item>
+		<item for="install">
+            CREATE TABLE `?:advanced_addon_data` (
+				`user_id` int(11) unsigned NOT NULL DEFAULT 0,
+				`categories` text NOT NULL DEFAULT '',
+				PRIMARY KEY (`user_id`)
+			) Engine=MyISAM DEFAULT CHARSET UTF8;
+		</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:advanced_addon_data;</item>
+	</queries-->
+</addon>

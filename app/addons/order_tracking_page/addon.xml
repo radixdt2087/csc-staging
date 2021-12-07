@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>order_tracking_page</id>
+    <version>1.2</version>
+    <priority>451562152</priority>
+    <position>166</position>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <supplier> Webkul Software Pvt. Ltd</supplier>
+    <supplier_link>https://store.webkul.com/CS-Cart.html</supplier_link>
+    
+    <authors>
+        <author>
+            <name>Webkul Pvt. Ltd.</name>
+            <email>support@webkul.com</email>
+            <url>https://store.webkul.com</url>
+        </author>
+    </authors>
+    
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    
+    <functions>
+        <item for="install">fn_order_tracking_page_install</item>
+    </functions>
+    
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="section_1">
+                <items>
+                    <item id="wk_general">
+                        <type>header</type>
+                        <variants/>
+                    </item>
+                    <item id="wk_select_template">
+                        <type>selectbox</type>
+                        <default_value>template_four</default_value>                        
+                        <variants>
+                            <item id="template_two"></item>
+                            <item id="template_three"></item>
+                            <item id="template_four"></item>
+                        </variants>
+                    </item>
+                    <item id="elm_image">
+                        <type>template</type>
+                        <default_value>otp_setting_template.tpl</default_value>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings> 
+    
+    <queries>
+        <item for="install">DROP TABLE IF EXISTS ?:wk_order_labels;</item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:wk_order_labels` (
+                `id` int(11)  NOT NULL AUTO_INCREMENT,
+                `position` int(11)  NOT NULL ,
+                `statuses` text  NOT NULL ,
+		`statusad` text NOT NULL ,
+		`storefront_id` int(100) NOT NULL,
+                PRIMARY KEY  (`id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET UTF8 AUTO_INCREMENT=1;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_order_labels;</item>
+        <item for="install">DROP TABLE IF EXISTS ?:wk_order_labels_description;</item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:wk_order_labels_description` (
+                `id` int(11),
+                `title` varchar(100),
+                `description` varchar(255),
+                `lang_code` char(2),
+                PRIMARY KEY (`id`,`lang_code`)
+            ) ENGINE=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_order_labels_description;</item>
+        <item editions="MULTIVENDOR,ULTIMATE">REPLACE INTO ?:privileges (privilege, is_default, section_id) VALUES ('manage_wk_order_tracking', 'Y', 'addons');</item>
+        <item editions="MULTIVENDOR,ULTIMATE">REPLACE INTO ?:privileges (privilege, is_default, section_id) VALUES ('view_wk_order_tracking', 'Y', 'addons');</item>
+        <item for="uninstall" editions="MULTIVENDOR,ULTIMATE">DELETE FROM ?:privileges WHERE privilege LIKE 'manage_wk_order_tracking' OR privilege LIKE 'view_wk_order_tracking'</item>
+    </queries>
+</addon>

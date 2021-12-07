@@ -1,0 +1,2 @@
+<?php
+ namespace Tygh\GoogleAuth; use \RobThree\Auth\TwoFactorAuth; use Tygh\Registry; class GoogleAuth extends TwoFactorAuth { private static $_instance; public function __construct($app_name) { parent::__construct($app_name); } public static function instance() { if (empty(self::$_instance)) { $app_name = Registry::get('addons.sd_google_authenticator.application_name'); self::$_instance = new self($app_name); } return self::$_instance; } } 

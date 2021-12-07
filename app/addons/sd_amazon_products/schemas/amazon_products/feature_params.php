@@ -1,0 +1,2 @@
+<?php
+ return array( 'purpose' => 'group_catalog_item', 'feature_style' => 'dropdown', 'filter_style' => 'checkbox', 'feature_type' => 'S', 'parent_id' => 0, 'feature_code' => '', 'position' => '', 'full_description' => '', 'status' => 'A', 'display_on_product' => 'N', 'display_on_catalog' => 'N', 'display_on_header' => 'N', 'prefix' => '', 'suffix' => '', 'categories_path' => '', 'original_var_ids' => '', ); 

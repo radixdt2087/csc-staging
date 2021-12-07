@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+.-charities_detail .control-group .control-label {
+	float:left;
+	margin-right: 5px;
+	width: 250px;
+	font-weight: bold;
+}
+.-charities_detail .control-group .control,
+.-charities_detail .control-group input {
+	display: inline;
+}
+.sidebar-charities-label {
+	float:left;
+	margin-right: 5px;
+	width: 100px;
+	font-weight: bold;
+}
+.sidebar-charities-input {
+	display: inline;
+}
+.sidebar-charities-container {
+	margin:25px 15px;
+}
+.no-decorate li{
+	list-style-type:none;
+}
+ul.no-decorate {
+	margin-left:0;
+}
+.ch-control-group {
+	width: 100%;
+}
+.ch-control-group .control-label {
+	display: inline;
+	text-align: left;
+	font-size: 120%;
+	font-weight: bold;
+	padding-right: 10px;
+	width: 20%;
+}
+.ch-control-group .controls {
+	max-width: 80%;
+	text-align: left;
+	display: inline;
+}
+.ch-control-group .controls input {
+	margin-top: 10px;
+}
+.input-wide {
+	width:80%;
+}
+.ch-input-small {
+	width: 120px;
+}

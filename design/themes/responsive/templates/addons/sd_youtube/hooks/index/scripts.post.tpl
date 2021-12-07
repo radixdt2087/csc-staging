@@ -1,0 +1,1 @@
+{script src="js/addons/sd_youtube/func.js"}

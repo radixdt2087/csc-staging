@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+    <id>affiliate_update</id>
+    <name>CS-Cart user sync</name>
+    <description>This addon sync CS-Cart users in ICH application.</description>
+    <version>1.0</version>
+    <default_language>en</default_language>
+    <priority>100500</priority>
+    <status>active</status>
+    <supplier>Source Che</supplier>
+    <supplier_link>https://www.chetu.com/</supplier_link>
+    
+    <authors>
+        <author>
+            <name>Source Che</name>
+            <url>https://www.chetu.com/</url>
+        </author>
+    </authors> 
+</addon>

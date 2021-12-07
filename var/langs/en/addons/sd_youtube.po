@@ -1,0 +1,178 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::sd_youtube"
+msgid "Simtech Development: YouTube Video Gallery"
+msgstr "Simtech Development: YouTube Video Gallery"
+
+msgctxt "SettingsSections::sd_youtube::general"
+msgid "General"
+msgstr "General"
+
+msgctxt "Addons::description::sd_youtube"
+msgid "Allows you to embed a YouTube video into the product page, category page, and other webstore pages. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Support</a>"
+msgstr "Allows you to embed a YouTube video into the product page, category page, and other webstore pages. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Support</a>"
+
+msgctxt "SettingsOptions::sd_youtube::show_player_controls"
+msgid "Show player controls"
+msgstr "Show player controls"
+
+msgctxt "SettingsOptions::sd_youtube::show_video_on_category_page"
+msgid "Show video in products list"
+msgstr "Show video in products list"
+
+msgctxt "SettingsOptions::sd_youtube::big_picture_page_video_width"
+msgid "Max width of video on product details page in the big picture mode"
+msgstr "Max width of video on product details page in the big picture mode"
+
+msgctxt "Languages::youtube_link"
+msgid "YouTube link"
+msgstr "YouTube link"
+
+msgctxt "Languages::sd_youtube_link"
+msgid "SD: YouTube video link"
+msgstr "SD: YouTube video link"
+
+msgctxt "Languages::sd_youtube_videos"
+msgid "SD: YouTube video link for product tab"
+msgstr "SD: YouTube video link for product tab"
+
+msgctxt "Languages::youtube"
+msgid "You Tube"
+msgstr "YouTube"
+
+msgctxt "Languages::play_video_block"
+msgid "Show play video block"
+msgstr "Show play video block"
+
+msgctxt "Languages::video_limit"
+msgid "Maximum number of videos shown in the video gallery"
+msgstr "Maximum number of videos shown in the video gallery"
+
+msgctxt "Languages::block_youtube_video"
+msgid "SD: Single YouTube video"
+msgstr "SD: Single YouTube video"
+
+msgctxt "Languages::block_youtube_video_description"
+msgid "YouTube video"
+msgstr "YouTube video"
+
+msgctxt "Languages::block_video_gallery"
+msgid "SD: YouTube"
+msgstr "SD: YouTube"
+
+msgctxt "Languages::block_video_gallery_description"
+msgid "YouTube video gallery"
+msgstr "YouTube video gallery"
+
+msgctxt "Languages::youtube_video"
+msgid "YouTube video"
+msgstr "YouTube video"
+
+msgctxt "Languages::play_video"
+msgid "Play video"
+msgstr "Play video"
+
+msgctxt "Languages::product_with_video"
+msgid "Products with video"
+msgstr "Products with video"
+
+msgctxt "Languages::video_gallery"
+msgid "Video gallery"
+msgstr "Video gallery"
+
+msgctxt "Languages::show_youtube_video"
+msgid "Show YouTube video on the product page"
+msgstr "Show YouTube video on the product page"
+
+msgctxt "Languages::replace_main_image"
+msgid "Replace the main image"
+msgstr "Replace the main image"
+
+msgctxt "Languages::text_no_videos"
+msgid "Videos not found"
+msgstr "Videos not found"
+
+msgctxt "Languages::videos_from_all_store"
+msgid "Videos from all store"
+msgstr "Videos from all store"
+
+msgctxt "Languages::videos_from_category"
+msgid "Videos from category"
+msgstr "Videos from category"
+
+msgctxt "Languages::show_suggested_videos_after_finish"
+msgid "Show suggested videos after finish"
+msgstr "Show suggested videos after finish"
+
+msgctxt "SettingsOptions::sd_youtube::autoplay"
+msgid "Autoplay"
+msgstr "Autoplay"
+
+msgctxt "SettingsTooltips::sd_youtube::autoplay"
+msgid "The video will automatically start playing when the customer opens the product details page. Works only when the main image is replaced with the video"
+msgstr "The video will automatically start playing when the customer opens the product details page. Works only when the main image is replaced with the video"
+
+msgctxt "SettingsTooltips::sd_youtube::big_picture_page_video_width"
+msgid "By default, the video takes all free space on width"
+msgstr "By default, the video takes all free space on width"
+
+
+msgctxt "Languages::addons.sd_youtube.sd_youtube_error_delete_filters"
+msgid "please_delete_filter"
+msgstr "To disable the YouTube add-on, first delete filter(s): <b>[filter_name]</b>"
+
+msgctxt "Languages::all_subcategories"
+msgid "Apply to all subcategories"
+msgstr "Apply to all subcategories"
+
+msgctxt "Languages::visibility"
+msgid "Show block"
+msgstr "Show block"
+
+msgctxt "Languages::only_unauthorized_users"
+msgid "Only for unauthorized users"
+msgstr "Only for unauthorized users"
+
+msgctxt "Languages::only_authorized_users"
+msgid "Only for authorized users"
+msgstr "Only for authorized users"
+
+msgctxt "Languages::all_users"
+msgid "For all users"
+msgstr "For all users"
+
+msgctxt "Languages::video_width"
+msgid "Video width"
+msgstr "Video width"
+
+msgctxt "Languages::video_width_tooltip"
+msgid "If the field is empty, the video will take the width of the entire block."
+msgstr "If the field is empty, the video will take the width of the entire block."
+
+msgctxt "SettingsOptions::sd_youtube::replace_main_img"
+msgid "Replace the main product image with the first video frame"
+msgstr "Replace the main product image with the first video frame"
+
+msgctxt "SettingsTooltips::sd_youtube::replace_main_img"
+msgid "For product blocks and product list pages."
+msgstr "For product blocks and product list pages."
+
+msgctxt "Languages::sd_size_force"
+msgid "Force compress the image"
+msgstr "Force compress the image"
+
+msgctxt "Languages::sd_youtube_single_video"
+msgid "Single YouTube video"
+msgstr "Single YouTube video"
+
+msgctxt "Languages::see_all"
+msgid "See all"
+msgstr "See all"
+
+msgctxt "SettingsOptions::sd_youtube::lkey"
+msgid "License key"
+msgstr "License key"

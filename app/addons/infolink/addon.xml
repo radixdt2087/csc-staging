@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<addon scheme='2.0'>
+    <id>infolink</id>
+    <version>1.0</version>
+    <name>Upload</name>
+    <description>Upload video and Document</description>
+    <priority>100500</priority>
+    <status>active</status>
+    <supplier>Source Che</supplier>
+    <supplier_link>https://www.chetu.com/</supplier_link>
+    
+    <authors>
+        <author>
+            <name>Source Che</name>
+            <url>https://www.chetu.com/</url>
+        </author>
+    </authors>
+</addon>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+    <id>card_management</id>
+    <version>1.0</version>
+    <name>Multiple card management</name>
+    <description>This addons manages the multiple card management</description>
+    <priority>699</priority>
+    <status>active</status>
+    <supplier>Source Rad</supplier>
+    <compatibility>
+        <core_edition>
+            MULTIVENDOR
+        </core_edition>
+    </compatibility>
+    <queries>
+        <item for="install">
+            CREATE TABLE `?:card_details`(
+            `id` int(11)  NOT NULL AUTO_INCREMENT,
+            `user_id` int(11) NOT NULL,
+            `card_token` varchar(250) NOT NULL,
+            `customer_id` varchar(250) NOT NULL,
+            `card_number` varchar(255) NOT NULL DEFAULT '',
+            `isDefault` varchar(250) NOT NULL,
+            `isDeleted` varchar(250) NOT NULL DEFAULT '0',
+             PRIMARY KEY (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:card_details;</item>
+    </queries>
+</addon>
+
+
+

@@ -1,0 +1,177 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU"
+
+msgctxt "Addons::name::sd_youtube"
+msgid "Simtech Development: YouTube Видео галерея"
+msgstr "Simtech Development: YouTube Видео галерея"
+
+msgctxt "SettingsSections::sd_youtube::general"
+msgid "General"
+msgstr "General"
+
+msgctxt "Addons::description::sd_youtube"
+msgid "Allows you to embed a YouTube video into the product page, category page, and other webstore pages. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Support</a>"
+msgstr "Позволяет добавлять YouTube видео на страницу товара, страницу категории и другие страницы магазина. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Поддержка</a>"
+
+msgctxt "SettingsOptions::sd_youtube::show_player_controls"
+msgid "Show player controls"
+msgstr "Показывать блок управления воспроизведением видео"
+
+msgctxt "SettingsOptions::sd_youtube::show_video_on_category_page"
+msgid "Show video in products list"
+msgstr "Показывать видео в списке продуктов"
+
+msgctxt "SettingsOptions::sd_youtube::big_picture_page_video_width"
+msgid "Max width of video on product details page in the big picture mode"
+msgstr "Максимальная ширина видео на детальной странице товара в режиме 'Большая картинка'"
+
+msgctxt "Languages::youtube_link"
+msgid "You Tube link"
+msgstr "Ссылка на YouTube видео"
+
+msgctxt "Languages::sd_youtube_link"
+msgid "SD: YouTube video link"
+msgstr "SD: Ссылка на YouTube видео"
+
+msgctxt "Languages::sd_youtube_videos"
+msgid "SD: YouTube video link for product tab"
+msgstr "SD: Ссылка на YouTube видео для вкладки товара"
+
+msgctxt "Languages::youtube"
+msgid "You Tube"
+msgstr "YouTube"
+
+msgctxt "Languages::play_video_block"
+msgid "Show play video block"
+msgstr "Показывать блок для воспроизведения видео в галерее:"
+
+msgctxt "Languages::video_limit"
+msgid "Maximum number of videos shown in the video gallery"
+msgstr "Максимальное количество видеороликов доступных в галерее"
+
+msgctxt "Languages::block_youtube_video"
+msgid "SD: Single YouTube video"
+msgstr "SD: Одиночное YouTube видео"
+
+msgctxt "Languages::block_youtube_video_description"
+msgid "YouTube video"
+msgstr "YouTube видео"
+
+msgctxt "Languages::block_video_gallery"
+msgid "SD: Youtube video gallery"
+msgstr "SD: Галерея YouTube видео с товарами"
+
+msgctxt "Languages::block_video_gallery_description"
+msgid "Youtube video gallery"
+msgstr "Галерея YouTube видео с товарами"
+
+msgctxt "Languages::youtube_video"
+msgid "YouTube video"
+msgstr "Видео продукта из YouTube"
+
+msgctxt "Languages::play_video"
+msgid "Play video"
+msgstr "Play video"
+
+msgctxt "Languages::product_with_video"
+msgid "Products with video"
+msgstr "Продукты с видео"
+
+msgctxt "Languages::video_gallery"
+msgid "Video gallery"
+msgstr "Галерея видео"
+
+msgctxt "Languages::show_youtube_video"
+msgid "Show YouTube video on the product page"
+msgstr "Показать видео товара на детальной странице"
+
+msgctxt "Languages::replace_main_image"
+msgid "Replace the main image"
+msgstr "Заменить главное изображение"
+
+msgctxt "Languages::text_no_videos"
+msgid "Videos not found"
+msgstr "Не найдено ни одного видеоролика"
+
+msgctxt "Languages::videos_from_all_store"
+msgid "Videos from all store"
+msgstr "Видео из всего магазина"
+
+msgctxt "Languages::videos_from_category"
+msgid "Videos from category"
+msgstr "Видео из выбранной категории"
+
+msgctxt "Languages::show_suggested_videos_after_finish"
+msgid "Show suggested videos after finish"
+msgstr "Показывать рекомендуемые видео после окончания воспроизведения"
+
+msgctxt "SettingsOptions::sd_youtube::autoplay"
+msgid "Autoplay"
+msgstr "Автоматическое воспроизведение"
+
+msgctxt "SettingsTooltips::sd_youtube::autoplay"
+msgid "The video will automatically start playing when the customer opens the product details page. Works only when the main image is replaced with the video"
+msgstr "Воспроизведение видео включится автоматически при открытии детальной страницы товара. Срабатывает только в случае, если видео заменяет основное изображение."
+
+msgctxt "SettingsTooltips::sd_youtube::big_picture_page_video_width"
+msgid "By default, the video takes all free space on width"
+msgstr "По умолчанию видео занимает всё свободное пространство по ширине"
+
+msgctxt "Languages::addons.sd_youtube.sd_youtube_error_delete_filters"
+msgid "please_delete_filter"
+msgstr "Внимание! Чтобы выключить модуль YouTube, сначала удалите фильтр(ы): <b>[filter_name]</b>"
+
+msgctxt "Languages::all_subcategories"
+msgid "Apply to all subcategories"
+msgstr "Применить для всех подкатегорий"
+
+msgctxt "Languages::visibility"
+msgid "Show block"
+msgstr "Отображать блок"
+
+msgctxt "Languages::only_unauthorized_users"
+msgid "Only for unauthorized users"
+msgstr "Только для неавтоиризованных пользователей"
+
+msgctxt "Languages::only_authorized_users"
+msgid "Only for authorized users"
+msgstr "Только для автоиризованных пользователей"
+
+msgctxt "Languages::all_users"
+msgid "For all users"
+msgstr "Для всех пользователей"
+
+msgctxt "Languages::video_width"
+msgid "Video width"
+msgstr "Ширина видео"
+
+msgctxt "Languages::video_width_tooltip"
+msgid "If the field is empty, the video will take the width of the entire block."
+msgstr "Если поле оставить пустым, то видео будет отображаться во всю ширину блока."
+
+msgctxt "SettingsOptions::sd_youtube::replace_main_img"
+msgid "Replace the main product image with the first video frame."
+msgstr "Заменять главное изображение товара первым кадром видео"
+
+msgctxt "SettingsTooltips::sd_youtube::replace_main_img"
+msgid "For product blocks and product list pages."
+msgstr "Для продуктовых блоков и страниц списка товаров."
+
+msgctxt "Languages::sd_size_force"
+msgid "Force compress the image"
+msgstr "Принудительно сжимать изображение"
+
+msgctxt "Languages::sd_youtube_single_video"
+msgid "Single YouTube video"
+msgstr "Одиночное YouTube видео"
+
+msgctxt "Languages::see_all"
+msgid "See all"
+msgstr "Посмотреть все"
+
+msgctxt "SettingsOptions::sd_youtube::lkey"
+msgid "License key"
+msgstr "Лицензионный ключ"

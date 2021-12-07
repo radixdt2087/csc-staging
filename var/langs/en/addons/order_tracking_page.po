@@ -1,0 +1,168 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::order_tracking_page"
+msgid "Order Status Tracker"
+msgstr "Order Status Tracker"
+
+msgctxt "LanguageName"
+msgid "Localized language name"
+msgstr "English"
+
+msgctxt "Addons::description::order_tracking_page"
+msgid "Allow admin to set tracking in the graphical & interactive way for customers."
+msgstr "Allow admin to set tracking in the graphical & interactive way for customers."
+
+msgctxt "SettingsSections::order_tracking_page::section_1"
+msgid "Generic settings"
+msgstr "Generic settings"
+
+msgctxt "SettingsOptions::order_tracking_page::wk_general"
+msgid "Configuration"
+msgstr "Configuration"
+
+msgctxt "SettingsOptions::order_tracking_page::wk_select_template"
+msgid "Select Template"
+msgstr "Select Template"
+
+msgctxt "SettingsTooltips::order_tracking_page::wk_select_template"
+msgid "Select the Template to show the customer on order tracking page"
+msgstr "Select the Template to show the customer on order tracking page"
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_one"
+msgid "Template One"
+msgstr "Template One"
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_two"
+msgid "Map Template"
+msgstr "Map Template"
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_three"
+msgid "Linear Template One"
+msgstr "Linear Template One"
+
+msgctxt "SettingsVariants::order_tracking_page::wk_select_template::template_four"
+msgid "Linear Template Two"
+msgstr "Linear Template Two"
+
+msgctxt "Languages::order_tracking_page_menu_description"
+msgid "Manage Order status tracker, add state, arrange state, edit state, etc."
+msgstr "Manage Order status tracker, add state, arrange state, edit state, etc."
+
+msgctxt "Languages::order_tracking_page"
+msgid "Order Status Tracker"
+msgstr "Order Status Tracker"
+
+msgctxt "Languages::manage_state"
+msgid "Manage State"
+msgstr "Manage State"
+
+msgctxt "Languages::selected_status"
+msgid "Order Status"
+msgstr "Order Status"
+
+msgctxt "Languages::otp_add_label"
+msgid "Add State"
+msgstr "Add State"
+
+msgctxt "Languages::text_labels_have_been_deleted"
+msgid "States are deleted successfully."
+msgstr "States are deleted successfully."
+
+msgctxt "Languages::text_label_have_been_deleted"
+msgid "State is deleted successfully."
+msgstr "State is deleted successfully."
+
+msgctxt "Languages::select_status"
+msgid "Select Status"
+msgstr "Select Status"
+
+msgctxt "Languages::icon_at_activate_title"
+msgid "Icon: "
+msgstr "Icon: "
+
+msgctxt "Languages::chr_allow"
+msgid "Only Characters allowed..."
+msgstr "Only Characters allowed..."
+
+msgctxt "Languages::active/disabled"
+msgid "Active/Disabled"
+msgstr "Active/Disabled"
+
+msgctxt "Languages::otp_state_ad_tooltip"
+msgid "Select Order Status Active/Disabled"
+msgstr "Select Order Status Active/Disabled"
+
+msgctxt "Languages::icon_at_activate_text"
+msgid "Shows icon when the state is achieved."
+msgstr "Shows icon when the state is achieved."
+
+msgctxt "Languages::icon_at_deactivate_title"
+msgid "Icon: "
+msgstr "Icon: "
+
+msgctxt "Languages::icon_at_deactivate_text"
+msgid "Show icon when state has to be achieved means state is in pending state."
+msgstr "Show icon when state has to be achieved means state is in pending state."
+
+msgctxt "Languages::label_update"
+msgid "Update State"
+msgstr "Update State"
+
+msgctxt "Languages::max_limit_of_creating_labels"
+msgid "Doesn't allow to create more state because you are at max limit."
+msgstr "Doesn't allow to create more state because you are at max limit."
+
+msgctxt "Languages::track_order"
+msgid "Track Order"
+msgstr "Track Order"
+
+msgctxt "Languages::label_add"
+msgid "New State"
+msgstr "New State"
+
+msgctxt "Languages::otp_state"
+msgid "State Title"
+msgstr "State Title"
+
+msgctxt "Languages::otp_description_tooltip"
+msgid "it gives the information about the state at the backend. At the manage state page of order status tracker."
+msgstr "it gives the information about the state at the backend. At the manage state page of order status tracker."
+
+
+msgctxt "Languages::otp_position_tooltip"
+msgid "Enter the numeric value to set the arrangement of states on the order detail page. It works in ascending order."
+msgstr "Enter the numeric value to set the arrangement of states on the order detail page. It works in ascending order."
+
+
+msgctxt "Languages::otp_state_title_tooltip"
+msgid "Title of the state shown on the order detail page. Not more than 30 characters"
+msgstr "Title of the state shown on the order detail page. Not more than 30 characters"
+
+
+msgctxt "Languages::otp_selected_status_tooltip"
+msgid "Select the order status of the state. You select multiple status for one state. If the order status match to state status then this state is active state."
+msgstr "Select the order status of the state. You select multiple status for one state. If the order status match to state status then this state is active state."
+
+msgctxt "Languages::otp_general_info"
+msgid "General"
+msgstr "General"
+
+msgctxt "Languages::otp_icons_section"
+msgid "Icons"
+msgstr "Icons"
+
+msgctxt "Languages::wk_webkul_user_guide_content"
+msgid "Congratulations!!! <b>\"[addon_name]\"</b> Add-on is successfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+msgstr "Congratulations!!! <b>\"[addon_name]\"</b> Add-on is successfully installed. <ul class='inline social-share'><li><a href='[support_link]' target='_blank' class='uibutton large confirm'>Support Link</a></li><li><a href='[user_guide]' class='uibutton large confirm' target='_blank'>User Guide</a></li></ul>"
+
+msgctxt "Languages::privileges.manage_wk_order_tracking"
+msgid "Manage Tracking orders"
+msgstr "Manage Tracking orders"
+
+msgctxt "Languages::privileges.view_wk_order_tracking"
+msgid "View Tracking orders"
+msgstr "View Tracking orders"

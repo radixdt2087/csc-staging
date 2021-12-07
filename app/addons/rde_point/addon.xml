@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>rde_point</id>
+    <name>RDE Points</name>
+    <description>RDE Points Calculation</description>
+    <version>1.0</version>
+    <default_language>en</default_language>
+    <priority>5000</priority>
+    <status>active</status> 
+</addon>

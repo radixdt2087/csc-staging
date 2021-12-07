@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+	<id>order_status_update</id>
+	<version>1.0</version>
+	<name>Order status Update</name>
+	<description>This addon will update the status of refunded order</description>
+	<priority>100502</priority>
+	 <status>active</status>
+</addon>

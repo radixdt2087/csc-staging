@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+	<id>merchant_affiliation</id>
+	<name>Vendor Affiliation</name>
+    <description>Generate affiliation link and company link for vendor</description>
+	<version>1.0</version>
+	<priority>100520</priority>
+	<status>active</status>
+
+	<supplier>Source Che</supplier>
+    <supplier_link>https://www.chetu.com/</supplier_link>
+    
+    <authors>
+        <author>
+            <name>Source Che</name>
+            <url>https://www.chetu.com/</url>
+        </author>
+    </authors>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="ich_link">
+                        <name>Enter URL</name>
+                        <type>input</type>
+                    </item>
+                </items>
+            </section>
+         </sections>
+    </settings>
+</addon>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+<id>abt__unitheme2_mv</id>
+<version>4.12.1.a</version>
+<priority>10010</priority>
+<position>0</position>
+<status>active</status>
+<default_language>en</default_language>
+<ab>
+<hash>cbb2348bdaea30765a6c6673f13a783a2dd9ce04, 2020-12-02 15:41:12</hash>
+<layout_version>mv3</layout_version>
+<compatibility>
+<dependencies>
+<ab__addons_manager><min>2.3.5</min></ab__addons_manager>
+</dependencies>
+</compatibility>
+</ab>
+<authors>
+<author>
+<name>AlexBranding</name>
+<email>info@alexbranding.com</email>
+<url>https://alexbranding.com</url>
+</author>
+</authors>
+<supplier>AlexBranding</supplier>
+<supplier_link>https://cs-cart.alexbranding.com</supplier_link>
+<supplier_page>ab__am.addons</supplier_page>
+<compatibility>
+<dependencies>abt__unitheme2,ab__addons_manager</dependencies>
+<conflicts>abt__unitheme,abt__youpitheme</conflicts>
+<core_version><min>4.12.1</min></core_version>
+<core_edition>MULTIVENDOR</core_edition>
+</compatibility>
+<settings edition_type="ROOT,VENDOR,STOREFRONT" layout="separate">
+<sections>
+<section id="settings">
+<items>
+<item id="code"><type>hidden</type><default_value>ABA-rusfRZEAEMs4TXs1hY744</default_value></item>
+<item id="build"><type>hidden</type><default_value>746</default_value></item>
+</items>
+</section>
+</sections>
+</settings>
+<functions>
+<item for="install">fn_abt__ut2_mv_copy_layouts</item>
+<item for="install">fn_abt__ut2_mv_remove_cscart_layouts</item>
+</functions>
+</addon>

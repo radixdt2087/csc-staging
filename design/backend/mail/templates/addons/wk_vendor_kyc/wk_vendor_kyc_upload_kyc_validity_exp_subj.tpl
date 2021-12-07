@@ -1,0 +1,1 @@
+{$company_data.company_name nofilter}: {if $subject}{$subject}{else}{__("validity_exp_subject")}{/if}

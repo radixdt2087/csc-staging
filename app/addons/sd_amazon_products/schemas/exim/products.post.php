@@ -1,0 +1,2 @@
+<?php
+ $schema['export_fields']['Amazon ASIN'] = array( 'db_field' => 'amz_asin', ); $schema['export_fields']['Amazon SKU'] = array( 'db_field' => 'amz_sku', ); $schema['export_fields']['Amazon EAN'] = array( 'db_field' => 'amz_ean', ); $schema['export_fields']['Amazon UPC'] = array( 'db_field' => 'amz_upc', ); $schema['export_fields']['Amazon ISBN'] = array( 'db_field' => 'amz_isbn', ); $schema['export_fields']['Amazon synchronization'] = array( 'db_field' => 'amz_synchronization', ); return $schema; 

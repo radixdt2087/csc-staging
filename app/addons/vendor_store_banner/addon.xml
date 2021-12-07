@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>vendor_store_banner</id>
+	<name>Vendor Store Banner</name>
+	<description>Lets you manage the banner image for the store depends on the vendor</description>
+    <version>1.0 | Webesol Technologies</version>
+    <priority>100000</priority>
+    <position>44</position>
+    <status>active</status>
+    <default_language>en</default_language>
+	
+	<translations>
+        <item for="name" lang="en">Vendor Store Banner</item>
+    </translations>
+	
+	<language_variables>
+		<item lang="en" id="store_banner">Store banner</item>
+		<item lang="en" id="vendor_store_banner">Vendor Store banner</item>
+		<item lang="en" id="ttc_vendor_store_banner">Upload the banner image for the vendor store.</item>
+		<item lang="en" id="vendor_store_banner.store_banner">Store banner</item>
+		<item lang="en" id="block_vendor_store_banner">Store banner block</item>
+		<item lang="en" id="block_vendor_store_banner_description">Vendor store banner image</item>
+	</language_variables>
+</addon>

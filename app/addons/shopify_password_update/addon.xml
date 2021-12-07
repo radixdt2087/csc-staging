@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+    <id>shopify_password_update</id>
+    <version>1.0</version>
+    <name>Shopify customer password update</name>
+    <description>This addons manages the shopify customer password update</description>
+    <priority>100504</priority>
+    <status>active</status>
+    <supplier>Source Rad</supplier>
+</addon>

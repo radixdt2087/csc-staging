@@ -1,0 +1,2 @@
+<?php
+ namespace Tygh\Enum; class AmazonOrderStatuses { const PENDING = 'Pending'; const UNSHIPPED = 'Unshipped'; const SHIPPED = 'Shipped'; const CANCELLED = 'Cancelled'; public static function getAll() { return array( self::PENDING => self::PENDING, self::UNSHIPPED => self::UNSHIPPED, self::SHIPPED => self::SHIPPED, self::CANCELLED => self::CANCELLED, ); } }

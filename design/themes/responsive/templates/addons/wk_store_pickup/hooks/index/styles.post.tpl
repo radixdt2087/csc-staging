@@ -1,0 +1,1 @@
+{style src="addons/wk_store_pickup/styles.less"}

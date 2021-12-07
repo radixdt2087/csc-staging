@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+    <id>vendor_enrollment</id>
+    <version>1.0</version>
+    <name>Vendor Enrollment</name>
+    <description>Vendor Enrollment manage vendor plans, addons, and vendor payment system </description>
+    <priority>100502</priority>
+    <status>active</status>
+    <supplier>Source Rad</supplier>
+    <compatibility>
+        <core_edition>
+            MULTIVENDOR
+        </core_edition>
+        <dependencies>digitzs_connect</dependencies>
+        <dependencies>vendor_plans</dependencies>
+    </compatibility>
+</addon>
